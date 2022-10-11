@@ -2,16 +2,20 @@ import * as FaIcons from "react-icons/fa";
 import * as AiIcons from "react-icons/ai";
 import { Link } from "react-router-dom"
 import { useState } from "react";
-import {SideBar} from "./SideBar";
+
 import "./NavBar.css";
 import {IconContext} from 'react-icons'
 import { Container, Nav, Navbar } from "react-bootstrap";
+import { useLocation } from "react-router-dom";
 
 
 function NavBar (){
    const [sidebar, setSidebar] = useState(false)
 
    const showSidebar = () => setSidebar(!sidebar)
+
+   const location = useLocation(); // returns {}
+   console.log("LOCATION pathname", location.pathname);
 
    return(
 
@@ -23,31 +27,37 @@ function NavBar (){
         <Navbar.Brand href="#home">I T E R R A R Y</Navbar.Brand>
         </Nav>
         <Nav>
-        <Link to="#" className="menu-bar">
+        <Link href="#" className="menu-bar">
           <FaIcons.FaBars onClick={showSidebar}/>
         </Link>
         </Nav>
+        </Container>
+        </Navbar>
       <Nav className={sidebar ? 'nav-menu active' : 'nav-menu'}>
         <Nav.Link className="nav-menu-items" onClick={showSidebar} >
           <Nav.Link className="nav-toggle">
-            <Link to="#" className="menu-bar-two">
+            <Link href="#" className="menu-bar-two">
               <AiIcons.AiOutlineClose />
             </Link>
           </Nav.Link>
-          {SideBar.map((item, index) => {
-            return (
-              <Nav.Link key={index} className={item.cName}>
-                <Link to={item.path}>
-                  {item.icon}
-                  <span>{item.title}</span>
-                </Link>
-              </Nav.Link>
-            )
-          })}
+         
+          <Nav.Link>
+
+              <Link to="/"
+                    className={location.pathname === "/" ? "nav-link active" : "nav-link"}
+              > Home </Link>
+              <Link to="/itineraries"
+                    className={location.pathname === "/itineraries" ? "nav-link active" : "nav-link"}
+              > Itineraries </Link>
+              <Link to="/itinerary"
+                    className={location.pathname === "/itinerary" ? "nav-link active" : "nav-link"}
+              > Itinerary </Link>
+
+          </Nav.Link>
+      
         </Nav.Link>
       </Nav>
-      </Container>
-        </Navbar>
+     
       </IconContext.Provider>
       </>
    )
