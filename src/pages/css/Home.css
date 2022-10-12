@@ -1,0 +1,12 @@
+.home {
+   display: flex;
+   height: 70vh;
+   align-items: center;
+   font-size: 3rem;
+ }
+ .text {
+  color: white;
+  position: absolute;
+  text-align: center;
+ }
+

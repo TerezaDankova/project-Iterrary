@@ -2,7 +2,6 @@ import * as FaIcons from "react-icons/fa";
 import * as AiIcons from "react-icons/ai";
 import { Link } from "react-router-dom"
 import { useState } from "react";
-
 import "./NavBar.css";
 import {IconContext} from 'react-icons'
 import { Container, Nav, Navbar } from "react-bootstrap";
@@ -14,7 +13,7 @@ function NavBar (){
 
    const showSidebar = () => setSidebar(!sidebar)
 
-   const location = useLocation(); // returns {}
+   const location = useLocation(); 
    console.log("LOCATION pathname", location.pathname);
 
    return(
@@ -24,7 +23,7 @@ function NavBar (){
         <Navbar className='navbar' expand="lg">
         <Container>
         <Nav className="me-auto">
-        <Navbar.Brand href="#home">I T E R R A R Y</Navbar.Brand>
+        <Navbar.Brand className="ml-2" href="#home">I T E R R A R Y</Navbar.Brand>
         </Nav>
         <Nav>
         <Link href="#" className="menu-bar">
@@ -36,7 +35,7 @@ function NavBar (){
       <Nav className={sidebar ? 'nav-menu active' : 'nav-menu'}>
         <Nav.Link className="nav-menu-items" onClick={showSidebar} >
           <Nav.Link className="nav-toggle">
-            <Link href="#" className="menu-bar-two">
+            <Link href="#" className="menu-bar-two mr-2">
               <AiIcons.AiOutlineClose />
             </Link>
           </Nav.Link>
@@ -54,7 +53,6 @@ function NavBar (){
               > Itinerary </Link>
 
           </Nav.Link>
-      
         </Nav.Link>
       </Nav>
      
