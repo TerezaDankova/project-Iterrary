@@ -7,7 +7,7 @@ import { Container } from 'react-bootstrap';
 
 const ItinerariesSlider = () => {
   return (
-<Container className='my-5 mx-auto' fluid>
+   <Container className='my-5 mx-auto' fluid>
       <Swiper
       FreeMode={true}
       grabCursor={true}

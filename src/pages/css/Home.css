@@ -1,12 +1,16 @@
 .home {
    display: flex;
-   height: 70vh;
+   height: 100vh;
    align-items: center;
    font-size: 3rem;
+   background-image: url("https://images.pexels.com/photos/3791007/pexels-photo-3791007.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+   background-position: center center;
+   background-repeat: no-repeat;
+   background-attachment: fixed;
+   background-size: cover;
  }
  .text {
   color: white;
-  position: absolute;
   text-align: center;
  }
-
+ 

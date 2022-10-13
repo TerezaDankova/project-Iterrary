@@ -1,0 +1,26 @@
+.card-hotel {
+   max-height: 25rem;
+   max-width: 80rem
+}
+.card-hotel-image {
+   height: 25rem;
+   max-width: 80rem
+}
+.card-hotel-title {
+   position: absolute;
+   top: 30%;
+   left: 100px;
+   right: 100px;
+   font-size: 40px;
+   text-align: center;
+   color: white;
+}
+.btn-hotel {
+   position: absolute; 
+   top: 80%;
+   left: 400px;
+   right: 400px;
+   background-color: rgba(255, 255, 255, 0.240);
+   color: white;
+   border-color: white;
+}

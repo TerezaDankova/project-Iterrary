@@ -1,4 +1,5 @@
 import React from 'react'
+import { Container } from 'react-bootstrap'
 import ExplanationText from '../components/ItinerariesPage/ExplanationText.jsx'
 
 import IntroductionItineraries from '../components/ItinerariesPage/IntroductionText.jsx'
@@ -9,7 +10,9 @@ function Itineraries() {
     <div className='itineraries'>
        <IntroductionItineraries />
        <ItinerariesSlider />
-       <ExplanationText />
+      <Container className='mt-5'> 
+            <ExplanationText />
+      </Container> 
     </div>
 
   )

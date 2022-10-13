@@ -10,12 +10,13 @@ const Home = () => {
       navigate("/itineraries")
    }
  return (
-      <div className="home">
-         <Image src="https://images.pexels.com/photos/3791007/pexels-photo-3791007.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" />
-         <Container className='text mx-5'
-         >
-            <Row className='mx-5'>
-             Luxury travel planning service creating life-changing journey's throughout Italy.
+ 
+         <Container className='home' fluid>
+            <Row >
+            <h1 style={{textAlign: "center"}}> Are you ready for your next adventury?</h1>
+            <h5>
+               We are luxury travel planning service creating life-changing journey's throughout Italy.
+            </h5>
             </Row>
             <Row>
             <Button className="my-5 mx-5" variant="light"
@@ -24,10 +25,7 @@ const Home = () => {
             </Button>
             </Row>
          </Container>
-
-        
-      </div>
-
+    
  )
 }
 export default Home 
