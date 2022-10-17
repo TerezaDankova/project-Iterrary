@@ -2,15 +2,15 @@ import React from 'react';
 import { Container } from 'react-bootstrap';
 import HotelsCard from '../components/AccommodationPage/HotelsCard';
 
-const Accommodation = () => {
+const Accommodations = () => {
    
  return (
    <Container>
       <div className="my-5" style={{textAlign: "center"}}>
-      Here will be informations about accommodations, I can book here also a hotel (best 10 hotels by using map over this card:).
+      Here will be 10 best hotels in the town.
       </div>
       <HotelsCard />
    </Container>
  )
 }
-export default Accommodation
+export default Accommodations

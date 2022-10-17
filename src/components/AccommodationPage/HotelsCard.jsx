@@ -1,7 +1,13 @@
 import { Button, Card } from 'react-bootstrap';
 import "./HotelsCard.css"
+import { useNavigate } from 'react-router-dom';
 
 const HotelsCard = () => {
+
+   const navigate = useNavigate();
+   const goToAccPage = () => {
+      navigate("/accommodationPage")
+   }
 
   return (
    <Card className='card-hotel shadow'>
@@ -9,6 +15,7 @@ const HotelsCard = () => {
          <Card.Title className='card-hotel-title'> Title
          </Card.Title>
          <Button className="btn-hotel" variant="light" 
+          onClick={goToAccPage}
          > SHOW MORE </Button>
    </Card>
   )

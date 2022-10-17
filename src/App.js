@@ -6,7 +6,8 @@ import Home from './pages/Home';
 import Itineraries from './pages/Itineraries';
 import Itinerary from './pages/Itinerary';
 import City from './pages/City';
-import Accommodation from './pages/Accommodation';
+import Accommodation from './pages/Accommodations';
+import AccommodationPage from './pages/AccommodationPage';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <Route path='/itinerary' element={<Itinerary />}/>
         <Route path='/city' element={<City />}></Route>
         <Route path='/accommodation' element={<Accommodation />}></Route>
+        <Route path='/accommodationPage' element={<AccommodationPage/>}></Route>
     </Routes>
   </BrowserRouter>
   </>

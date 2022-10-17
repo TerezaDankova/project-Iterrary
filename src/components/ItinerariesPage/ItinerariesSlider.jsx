@@ -40,8 +40,8 @@ const ItinerariesSlider = () => {
          <SwiperSlide>
             <ItinerariesSliderCard data={{
              imgSrc: "https://images.pexels.com/photos/4846247/pexels-photo-4846247.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260", 
-             title: "ROMA VENEZIA MILAN", 
-             text: "7 days trip"
+             title: "ROME FLORENCE 5TERRE VENICE", 
+             text: "10 days trip"
             }}/>           
          </SwiperSlide>
          <SwiperSlide>
