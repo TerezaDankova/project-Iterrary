@@ -39,9 +39,7 @@ function NavBar (){
               <AiIcons.AiOutlineClose />
             </Link>
           </Nav.Link>
-         
           <Nav.Link>
-
               <Link to="/"
                     className={location.pathname === "/" ? "nav-link active" : "nav-link"}
               > Home </Link>
