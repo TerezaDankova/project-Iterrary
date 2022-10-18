@@ -1,9 +1,9 @@
 import { Swiper, SwiperSlide} from 'swiper/react';
-import { FreeMode} from 'swiper';
 import 'swiper/css';
 import "swiper/css/free-mode"
 import ItinerariesSliderCard from './ItinerariesSliderCard';
 import { Container } from 'react-bootstrap';
+import Itinerary from '../../pages/Itinerary';
 
 const ItinerariesSlider = () => {
   return (
@@ -38,11 +38,11 @@ const ItinerariesSlider = () => {
       }}
       >
          <SwiperSlide>
-            <ItinerariesSliderCard data={{
+         <ItinerariesSliderCard data={{
              imgSrc: "https://images.pexels.com/photos/4846247/pexels-photo-4846247.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260", 
-             title: "ROME FLORENCE 5TERRE VENICE", 
+             title: "ROME FLORENCE VERONA VENICE", 
              text: "10 days trip"
-            }}/>           
+            }}/>   
          </SwiperSlide>
          <SwiperSlide>
             <ItinerariesSliderCard data={{

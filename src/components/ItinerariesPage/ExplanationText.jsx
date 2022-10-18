@@ -4,7 +4,7 @@ import React from 'react'
 function ExplanationText() {
   return (
     <div className='itineraries'>
-       <p className="my-5 mx-5" style={{fontSize: "13px", textAlign: "center"}}>
+       <p className="" style={{fontSize: "13px", textAlign: "center", marginTop: "140px"}}>
         Lorem ipsum dolor sit amet. Qui rerum optio qui laboriosam dolores non galisum quam sit quia perspiciatis eos facere officiis. 
         Aut tempora perferendis quo aliquid atque qui aperiam quaerat et dignissimos possimus qui porro aperiam et earum consectetur sit tenetur beatae.
         Eum enim dolorem ea quae maxime aut nostrum laborum eos sunt ipsa qui enim error. Ut iusto voluptate sed quibusdam sunt ut illum accusamus.

@@ -15,14 +15,14 @@ const City = () => {
    <Container>
       <Row>
          <Col className="my-5" >
-               <div style={{textAlign: "center"}}>
+               <div style={{textAlign: "center", }}>
                Here will be informations about the city I clicked on.
                </div>
          </Col>
          <Col>
                <Button 
                         variant="outline-primary"
-                                 style={{color: 'white', width: "200px", backgroundColor: "green"}} 
+                                 style={{color: 'white', width: "200px", backgroundColor: "green", marginLeft: "-200px"}} 
                                  onClick={goToAccommodationPage}> 
                                  ACCOMMODATIONS
                </Button>
