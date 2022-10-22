@@ -1,5 +1,5 @@
 import { initialState } from "../store/store";
-import { LOADING, GET_CITY_PICTURE } from "../actions/actions";
+import { LOADING, GET_CITY_PICTURE, GET_PLACES} from "../actions/actions";
 
 const logicReducer = (state = initialState.logic, action) => {
    switch (action.type) {
@@ -14,6 +14,7 @@ const logicReducer = (state = initialState.logic, action) => {
          ...state,
          cityPictures: [...state.cityPictures, ...action.payload] 
          };  
+
 
       default:
          return state; 

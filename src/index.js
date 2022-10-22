@@ -12,9 +12,9 @@ const root = createRoot(container);
 
 root.render(
  <Provider store={store}>
-           {/* <PersistGate persistor={persistor}>   */}
+        {/* <PersistGate persistor={persistor}>    */}
     <App />
-           {/* </PersistGate> */}
+        {/* </PersistGate>  */}
   </Provider>
 );
 

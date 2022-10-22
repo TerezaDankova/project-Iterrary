@@ -1,6 +1,7 @@
 export const LOADING = " LOADING";
 export const GET_CITY_PICTURE = 'GET_CITY_PICTURE'
 
+
 export const setLoading =isLoading =>({
    type:LOADING,
    payload: isLoading
@@ -10,6 +11,8 @@ export const getPictures = query =>({
    type: GET_CITY_PICTURE,
    payload: query
  });
+
+
 
  export const getPicturesWithThunk = (query) => {
 

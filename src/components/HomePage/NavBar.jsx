@@ -49,6 +49,9 @@ function NavBar (){
               <Link to="/itinerary"
                     className={location.pathname === "/itinerary" ? "nav-link active" : "nav-link"}
               > Itinerary </Link>
+               <Link to="/tripAdvisor"
+                    className={location.pathname === "/tripAdvisor" ? "nav-link active" : "nav-link"}
+              > Trip Advisor </Link>
 
           </Nav.Link>
         </Nav.Link>
