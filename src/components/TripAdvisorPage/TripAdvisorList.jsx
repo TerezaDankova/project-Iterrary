@@ -1,13 +1,14 @@
 import { useState } from "react"
+import { Container, Col } from "react-bootstrap";
+import TripAdvisorPlaceDetails from "./TripAdvisorPlaceDetails";
 
 
 
 
-const TripAdvisorList = (props) => {
+const TripAdvisorList =  (props) => {
    const [type, setType] = useState('restaurants');
    const [rating, setRating] = useState('');
 
- 
 
    return (
   
@@ -50,9 +51,13 @@ const TripAdvisorList = (props) => {
                </label>
             </form>
      
-         <div>
-       
-         </div>
+           <Container>
+            {props.places.map((place, i) => (
+            <Col md={6} key={i}>
+                 <TripAdvisorPlaceDetails place={place} />
+            </Col>
+            ) )}
+         </Container> 
          </div>
      
 

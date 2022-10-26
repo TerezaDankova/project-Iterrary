@@ -1,10 +1,10 @@
 import React from "react"
 
-const TripAdvisorPlaceDetails = () => {
+const TripAdvisorPlaceDetails = ( props ) => {
    return (
  
      <h1>
-    hello
+       {props.place.name}
      </h1>
 
    )

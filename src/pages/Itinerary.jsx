@@ -1,25 +1,11 @@
 import { Container, ListGroup, Button, Col, Row} from 'react-bootstrap';
 import { useNavigate } from 'react-router-dom';
 import { connect } from 'react-redux';
-import { getPicturesWithThunk } from '../app/redux/actions/actions';
+
 import { useEffect } from 'react';
 import Loader from '../components/Loader';
 import { Image } from 'react-bootstrap';
 
-const mapStateToProps = state => {
-  return{
-    loadState: state.logic.loading,
-    cityPictures: state.logic.getPictures,
-  }
-}
-
-const mapDispatchToProps = dispatch => {
-  return {
-    setQuery: query => {
-      dispatch(getPicturesWithThunk(query))
-    }
-  }
-}
 
 const Itinerary = (props) => {
 
@@ -27,10 +13,6 @@ const Itinerary = (props) => {
   const goToCityPage = () => {
     navigate("/city");
   };
-
-  useEffect(()=> {
-    props.setQuery("milan")
-  }, [])
 
 
   return (
@@ -81,4 +63,4 @@ const Itinerary = (props) => {
   );
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(Itinerary)
+export default Itinerary

@@ -2,7 +2,7 @@ import { combineReducers, configureStore } from '@reduxjs/toolkit';
 import storage from 'redux-persist/lib/storage';
 import { persistReducer, persistStore } from 'redux-persist';
 import thunk from 'redux-thunk';
-import logicReducer from '../reducers/logicReducer';
+import tripAdvisorReducer from '../reducers/tripAdvisorReducer';
 
 
 const persistConfig = {
@@ -12,11 +12,11 @@ const persistConfig = {
 
 
 export const initialState = {
-   logic: {loading: true, cityPictures: []}
+   tripAdvisor: { loading: true, places: [] }
 } 
 
 const bigReducer = combineReducers({
-   logic:logicReducer
+    tripAdvisor: tripAdvisorReducer
   });
 
 const persistedReducer = persistReducer(persistConfig, bigReducer)

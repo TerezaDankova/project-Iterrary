@@ -1,39 +1,57 @@
 export const LOADING = " LOADING";
-export const GET_CITY_PICTURE = 'GET_CITY_PICTURE'
-
+export const SET_PLACES = 'SET_PLACES'
+export const FETCHED_PLACES = 'FETCHED_PLACES'
 
 export const setLoading =isLoading =>({
    type:LOADING,
    payload: isLoading
  });
- 
-export const getPictures = query =>({
-   type: GET_CITY_PICTURE,
-   payload: query
+
+export const setPlaces = places =>({
+   type: SET_PLACES,
+   payload: places
+ });
+
+ export const fetchedPlaces = places =>({
+   type: FETCHED_PLACES,
+   payload: places
  });
 
 
 
- export const getPicturesWithThunk = (query) => {
+export const getPlacesData = () => {
 
-  const options = { method: "GET", headers: 
-       { Authorization: "Bearer 563492ad6f91700001000001c2eb2a7658f0461388935ac5627a5a53",},};
-    
-    const baseEndpoint = `https://api.pexels.com/v1/search?=${query}`
+   const params = new URLSearchParams({
+      bl_latitude: '11.847676',
+      tr_latitude: '12.838442',
+      bl_longitude: '109.095887',
+      tr_longitude: '109.149359',
+   })
 
- return async (dispatch) => {
+   const URL = 'https://travel-advisor.p.rapidapi.com/restaurants/list-in-boundary?' + params
+   const options = {
+      method: 'GET',
+      headers: {
+        'X-RapidAPI-Key': '72d74d5742msh671ddd3c5e94affp104bd1jsn0efe2b07cb3c',
+        'X-RapidAPI-Host': 'travel-advisor.p.rapidapi.com'
+      }
+    };
+
+return async (dispatch) => {
    try {
-      dispatch(setLoading(true));
-      const response = await fetch(baseEndpoint, options);
+      const response = await fetch(URL, options)
       if (response.ok) {
-         const  data  = await response.json()
-         dispatch(getPictures(data))
+         const json = await response.json()
+         const data = json.data.filter(p => p.latitude !== undefined && p.longitude !== undefined)
+         
+         dispatch(fetchedPlaces(data))
       } else {
          alert('Error fetching results')
        }
-      } catch (error) {
-         console.log(error) 
-      } finally {
-         dispatch(setLoading(false));}
- }
+
+   } catch (error) {
+      console.log(error)
+
+   }
+}
 }
