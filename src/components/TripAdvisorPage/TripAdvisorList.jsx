@@ -1,5 +1,5 @@
 import { useState } from "react"
-import { Container, Col } from "react-bootstrap";
+import { Col } from "react-bootstrap";
 import TripAdvisorPlaceDetails from "./TripAdvisorPlaceDetails";
 
 
@@ -51,13 +51,13 @@ const TripAdvisorList =  (props) => {
                </label>
             </form>
      
-           <Container>
+           <div>
             {props.places.map((place, i) => (
-            <Col md={6} key={i}>
+            <Col md={12} key={i}>
                  <TripAdvisorPlaceDetails place={place} />
             </Col>
             ) )}
-         </Container> 
+         </div> 
          </div>
      
 

@@ -1,6 +1,5 @@
-import { Autocomplete } from "@react-google-maps/api"
-import { Container, InputGroup, FormControl } from "react-bootstrap"
 
+import { Container, InputGroup, FormControl } from "react-bootstrap"
 
 
 const TripAdvisorHeader = () => {
@@ -12,7 +11,7 @@ const TripAdvisorHeader = () => {
             <div>
                <h6> Explore new places:
                </h6>
-               {/* <Autocomplete> */}
+                {/* <Autocomplete>  */}
                   <div>
                      <InputGroup className="mb-3">
                         <InputGroup.Prepend>
@@ -25,7 +24,7 @@ const TripAdvisorHeader = () => {
                         />
                      </InputGroup>
                   </div>
-               {/* </Autocomplete> */}
+               {/* </Autocomplete>  */}
 
             </div>
          </div>
