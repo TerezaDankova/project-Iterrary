@@ -5,7 +5,7 @@ import TripAdvisorList from "../components/TripAdvisorPage/TripAdvisorList"
 import TripAdvisorMap from "../components/TripAdvisorPage/TripAdvisorMap"
 import { useEffect } from "react"
 import { connect } from "react-redux"
-import { getPlacesData } from "../app/redux/actions/actions";
+import { getPlacesInCurrentPosition } from "../app/redux/actions/actions";
 
 
 const mapStateToProps = state => {
@@ -15,10 +15,12 @@ const mapStateToProps = state => {
 const mapDispatchToProps = dispatch => {
    return {
       getPlaces: () => {
-         dispatch(getPlacesData())
+         dispatch(getPlacesInCurrentPosition())
       }
    }
 }
+
+
 const TripAdvisor = (props) => {
   
    useEffect(() => {
@@ -28,11 +30,14 @@ const TripAdvisor = (props) => {
    return (
       <Container>
          <TripAdvisorHeader />
+         <div className="mt-5 mb-5">
+         <h4 style={{display: 'flex', justifyContent: 'center', alignItems: 'center', letterSpacing: '4px'}}>
+           THESE ARE RESTAURANTS AROUND YOU!
+         </h4>
+         </div>
          <Row>
             <Col sm={4}>
-
-                <TripAdvisorList places={props.places} />
-          
+                <TripAdvisorList places={props.places} />          
             </Col>
             <Col sm={8}>
                <TripAdvisorMap places={props.places} />

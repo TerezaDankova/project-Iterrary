@@ -18,17 +18,12 @@ export const setPlaces = places =>({
  });
 
 
-
-export const getPlacesData = () => {
-
+const getLocationFromString = async (name) => {
    const params = new URLSearchParams({
-      bl_latitude: '11.847676',
-      tr_latitude: '12.838442',
-      bl_longitude: '109.095887',
-      tr_longitude: '109.149359',
+      query: name
    })
 
-   const URL = 'https://travel-advisor.p.rapidapi.com/restaurants/list-in-boundary?' + params
+   const URL = 'https://travel-advisor.p.rapidapi.com/locations/search?' + params
    const options = {
       method: 'GET',
       headers: {
@@ -37,21 +32,107 @@ export const getPlacesData = () => {
       }
     };
 
-return async (dispatch) => {
-   try {
-      const response = await fetch(URL, options)
-      if (response.ok) {
-         const json = await response.json()
-         const data = json.data.filter(p => p.latitude !== undefined && p.longitude !== undefined)
-         
-         dispatch(fetchedPlaces(data))
-      } else {
-         alert('Error fetching results')
-       }
+   return fetch(URL, options)
+      .then(response => response.json())
+      .then(json => {
+         const cities = json.data.filter(r => r.result_type === "geos")
+   
+         if (cities.length <= 0) 
+            return undefined
 
-   } catch (error) {
-      console.log(error)
+         return cities[0].result_object.location_id
+      })
+      .catch(err => console.error(err));
+}
 
+const getRestaurantsFromLocationId = async (locationId) => {
+   const params = new URLSearchParams({
+      location_id: locationId
+   })
+
+   const URL = 'https://travel-advisor.p.rapidapi.com/restaurants/list?' + params
+   const options = {
+      method: 'GET',
+      headers: {
+        'X-RapidAPI-Key': '72d74d5742msh671ddd3c5e94affp104bd1jsn0efe2b07cb3c',
+        'X-RapidAPI-Host': 'travel-advisor.p.rapidapi.com'
+      }
+    };
+
+   return fetch(URL, options)
+      .then(response => response.json())
+      .then(json => {
+         return json.data.filter(p => p.latitude !== undefined && p.longitude !== undefined)
+      })
+      .catch(err => console.error(err));
+}
+
+const getRestaurantsFromCoordinates = async (coordinates) => {
+   const params = new URLSearchParams({
+      latitude: coordinates.latitude,
+      longitude: coordinates.longitude,
+      distance: 20
+   })
+
+   const URL = 'https://travel-advisor.p.rapidapi.com/restaurants/list-by-latlng?' + params
+   const options = {
+      method: 'GET',
+      headers: {
+        'X-RapidAPI-Key': '72d74d5742msh671ddd3c5e94affp104bd1jsn0efe2b07cb3c',
+        'X-RapidAPI-Host': 'travel-advisor.p.rapidapi.com'
+      }
+    };
+
+   return fetch(URL, options)
+      .then(response => response.json())
+      .then(json => {
+         return json.data.filter(p => p.latitude !== undefined && p.longitude !== undefined)
+      })
+      .catch(err => console.error(err));
+}
+
+
+export const getPlacesForCity = (cityName) => {
+   return async (dispatch) => {
+      console.log("Searching: " + cityName)
+
+      const locationId = await getLocationFromString(cityName)
+      const restaurants = await getRestaurantsFromLocationId(locationId)
+      console.log("Fetched: " + restaurants) 
+
+      dispatch(fetchedPlaces(restaurants))
    }
 }
+
+export const getPlacesInCurrentPosition = () => {
+   return async (dispatch) => {
+      try {
+            const position = await getPosition();
+
+            const crd = position.coords;
+         
+            console.log('Your current position is:');
+            console.log(`Latitude : ${crd.latitude}`);
+            console.log(`Longitude: ${crd.longitude}`);
+
+            const restaurants = await getRestaurantsFromCoordinates(crd)
+            console.log("Fetched: " + restaurants) 
+
+            dispatch(fetchedPlaces(restaurants))
+      } catch (err) {
+            console.error(err.message);
+
+            const crd = { latitude: 45.465, longitude: 9.186 };
+            const restaurants = await getRestaurantsFromCoordinates(crd)
+
+            dispatch(fetchedPlaces(restaurants))
+      }
+   }
+}
+
+
+function getPosition() {
+   return new Promise((resolve, reject) => 
+       navigator.geolocation.getCurrentPosition(resolve, reject)
+   );
 }

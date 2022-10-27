@@ -18,7 +18,7 @@ const tripAdvisorReducer = (state = initialState.tripAdvisor, action) => {
       case FETCHED_PLACES:
         return {
         ...state,
-        places: [...state.places, ...action.payload] 
+        places: [...action.payload] 
         };  
         
       default:

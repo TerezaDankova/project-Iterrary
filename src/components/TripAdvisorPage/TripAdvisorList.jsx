@@ -13,10 +13,8 @@ const TripAdvisorList =  (props) => {
    return (
   
       <div>
-         <h4>
-            Restaurants, Hotels & Attractions around you
-         </h4>
-         <form>
+       
+         {/* <form>
             <label>Type
                      <select defaultValue="Choose..." 
                        value={type} onChange={(e) => setType(e.target.value)}>
@@ -49,9 +47,9 @@ const TripAdvisorList =  (props) => {
                            </option>
                         </select>
                </label>
-            </form>
+            </form> */}
      
-           <div>
+            <div style={{ maxHeight: '500px', overflowY: 'scroll' }}>
             {props.places.map((place, i) => (
             <Col md={12} key={i}>
                  <TripAdvisorPlaceDetails place={place} />

@@ -1,35 +1,55 @@
 
 import { Container, InputGroup, FormControl } from "react-bootstrap"
+import { getPlacesForCity } from "../../app/redux/actions/actions"
+import { connect } from "react-redux"
+import { useState } from "react"
 
+const mapDispatchToProps = dispatch => {
+   return {
+      getPlacesForCity: (cityName) => {
+         dispatch(getPlacesForCity(cityName))
+      }
+   }
+}
 
-const TripAdvisorHeader = () => {
+const TripAdvisorHeader = ({getPlacesForCity}) => {
+   const [city, setCity] = useState("")
+
+   const handleInputChange = (e) => {
+      setCity( e.target.value )
+      console.log(e.target.value)
+   }
+
+   const onSubmit = (event) => {
+      event.preventDefault()
+      getPlacesForCity(city)
+    }
    return (
       <Container>
          <div >
-            <h5> Travel Advisor
-            </h5>
             <div>
-               <h6> Explore new places:
+               <h6> Here you can the closest restaurants in the city you would like:
                </h6>
-                {/* <Autocomplete>  */}
-                  <div>
+                  <form onSubmit={onSubmit} >
                      <InputGroup className="mb-3">
                         <InputGroup.Prepend>
-                           <InputGroup.Text id="basic-addon1">Search</InputGroup.Text>
+                           <InputGroup.Text 
+                            id="basic-addon1"
+                            >Search
+                            </InputGroup.Text>
                         </InputGroup.Prepend>
                         <FormControl
-                           placeholder="Username"
-                           aria-label="Username"
+                           onChange={handleInputChange}
+                           placeholder="Location"
+                           aria-label="Location"
                            aria-describedby="basic-addon1"
                         />
                      </InputGroup>
-                  </div>
-               {/* </Autocomplete>  */}
-
+                  </form>
             </div>
          </div>
 
       </Container>
    )
 }
-export default TripAdvisorHeader
+export default connect(null, mapDispatchToProps)(TripAdvisorHeader)

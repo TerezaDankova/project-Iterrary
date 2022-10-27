@@ -1,6 +1,7 @@
 import { auto } from "@popperjs/core"
 import React from "react"
 import { Card, Col, Row, Image} from "react-bootstrap"
+import { AiFillStar } from 'react-icons/ai'
 
 const TripAdvisorPlaceDetails = ( props ) => {
    return (
@@ -9,12 +10,12 @@ const TripAdvisorPlaceDetails = ( props ) => {
       <Card.Img style={{ width: '22rem', height: '12rem' }} variant="top" src={props.place.photo ? props.place.photo.images.large.url : 'https://cdnkdc.azureedge.net/cdprod/Media/images/blog/13-2019-trends' } />
       <Card.Body>
         <div>
-           <h6>{props.place.name}</h6> 
+           <p style={{fontWeight: 'bold'}}>{props.place.name}</p> 
         </div>
         <div >
           <Row style={{display: 'flex'}} justifyContent="space-between">
             <Col sm={9}>
-            <i className="bi bi-star-fill"> STARS </i>
+            < AiFillStar/>
             </Col>
             <Col sm={3}>
             <div style={{fontSize: '12px'}}>{props.place.num_reviews} review{props.place.num_reviews > 1 && 's'}</div>
@@ -23,7 +24,7 @@ const TripAdvisorPlaceDetails = ( props ) => {
         </div>
         <div>
           <Row style={{display: 'flex'}} justifyContent="space-between">
-            <Col sm={9}>
+            <Col sm={8}>
             <div style={{fontSize: '12px'}}>Price</div>
             </Col>
             <Col sm={3}>

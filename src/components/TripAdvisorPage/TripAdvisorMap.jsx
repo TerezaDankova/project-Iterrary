@@ -26,8 +26,8 @@ const getCenterAndZoom = (places) => {
 
    const bounds = getBoundingBox(places)
    const size = {
-      width: 1500, // Map width in pixels
-      height: 500, // Map height in pixels
+      width: 1000, // Map width in pixels
+      height: 1000, // Map height in pixels
     }
 
    return fitBounds(bounds, size)
@@ -40,7 +40,7 @@ const TripAdvisorMap = (props) => {
       <ThemeProvider 
       breakpoints={['md']}
       >
-         <div style={{ height: '500px', width: '100%' }}>
+         <div className="" style={{ height: '500px', width: '100%' }}>
          <GoogleMapReact
             bootstrapURLKeys={{ key: 'AIzaSyAIa8ut-4q_aq4ZKLFxnkvazkqvJga73kw'}}
             center={center}
@@ -51,17 +51,18 @@ const TripAdvisorMap = (props) => {
             // onChildClick={''}
          >
             {props.places.map((p, index) => (
-              <Container>
-                     <ImLocation 
-                     lat={Number(p.latitude)} 
-                     lng={Number(p.longitude)} />
-                     <TripAdvisorMarker 
-                     key={index} 
-                     lat={Number(p.latitude)} 
-                     lng={Number(p.longitude)} 
-                     name={p.name} /* Kreyser Avrora */ 
-                     />    
-               </Container>
+                                   <ImLocation 
+                                   key={index}
+                                   lat={Number(p.latitude)} 
+                                   lng={Number(p.longitude)} />
+            //   <Container>
+            //          <TripAdvisorMarker 
+            //          key={index} 
+            //          lat={Number(p.latitude)} 
+            //          lng={Number(p.longitude)} 
+            //          name={p.name} /* Kreyser Avrora */ 
+            //          />    
+            //    </Container>
             ))}
          </GoogleMapReact>
          </div>
