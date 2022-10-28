@@ -1,3 +1,5 @@
+import { Zoom } from "swiper";
+
 export const LOADING = " LOADING";
 export const SET_PLACES = 'SET_PLACES'
 export const FETCHED_PLACES = 'FETCHED_PLACES'
@@ -71,7 +73,7 @@ const getRestaurantsFromCoordinates = async (coordinates) => {
    const params = new URLSearchParams({
       latitude: coordinates.latitude,
       longitude: coordinates.longitude,
-      distance: 20
+      limit: 60,
    })
 
    const URL = 'https://travel-advisor.p.rapidapi.com/restaurants/list-by-latlng?' + params

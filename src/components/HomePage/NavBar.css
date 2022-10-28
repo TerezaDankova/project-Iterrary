@@ -3,6 +3,7 @@
    display: flex;
    justify-content: start;
    align-items: center;
+   overflow: hidden;
 }
 .menu-bar {
    font-size: 20px;
@@ -14,7 +15,7 @@
    background: none;
 }
 .nav-menu {
-   background-color: rgb(255, 255, 255);
+   background-color: rgb(226, 232, 240);
    width: 400px;
    height: 100vh;
    display: flex;
@@ -27,6 +28,7 @@
 .nav-menu.active {
    right: 0;
    transition: 300ms;
+   z-index: 999;
 }
 .nav-menu-items {
    width: 100%;
@@ -38,7 +40,15 @@
    justify-content: start;
    align-items: center;
 }
+.nav-link:hover {
+   color: rgb(36, 36, 36);
+}
 .nav-link.active {
-   border: 3px solid green;
-   color: gray;
+   border: 3px solid rgba(250, 249, 249, 0.27);
+   color: rgb(36, 36, 36);
+   font-weight: bold;
+   background-color: rgba(254, 254, 254, 0.59); 
+ }
+ .nav-link {
+   color: rgb(255, 255, 255);
  }

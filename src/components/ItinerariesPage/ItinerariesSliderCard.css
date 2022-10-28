@@ -8,9 +8,9 @@
 }
 .card-title {
    position: absolute;
-   top: 30%;
-   left: 100px;
-   right: 100px;
+   top: 10%;
+   left: 70px;
+   right: 70px;
    font-size: 34px;
    font-weight: 900;
    text-align: center;
@@ -24,7 +24,6 @@
    font-size: 14px;
    text-align: center;
    color: white;
-
    background-color: rgba(106, 105, 105, 0.824);
    padding: 5px;
    border-radius: 5px;

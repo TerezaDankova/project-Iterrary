@@ -22,19 +22,20 @@ const Itinerary = (props) => {
       {props.loadState && <Loader/>}
       <h1 className="my-3" style={{ textAlign: "center" }}> TRIP ITINERARY LIST </h1>
       <h6 style={{ textAlign: "center" }}>ROME - FLORENCE - VERONA - VENEZIA</h6>
+    <Row className='mt-3'>
+      <div className="mr-3" style={{ width: "80px", border: "1px solid black", borderRadius: "5px", textAlign: "center", padding: "10px" }}>Day 1</div>
+      <div className="mr-3" style={{ width: "80px", border: "1px solid black", borderRadius: "5px",textAlign: "center", padding: "10px" }}>Day 2</div>
+      <div className="mr-3" style={{ width: "80px", border: "1px solid black", borderRadius: "5px",textAlign: "center", padding: "10px" }}>Day 3</div>
+      <div className="mr-3" style={{ width: "80px", border: "1px solid black", borderRadius: "5px",textAlign: "center", padding: "10px" }}>Day 4</div>
+      <div className="mr-3" style={{ width: "80px", border: "1px solid black", borderRadius: "5px",textAlign: "center", padding: "10px" }}>Day 5</div>
+      <div className="mr-3" style={{ width: "80px", border: "1px solid black", borderRadius: "5px",textAlign: "center", padding: "10px" }}>Day 6</div>
+      <div className="mr-3" style={{ width: "80px", border: "1px solid black", borderRadius: "5px",textAlign: "center", padding: "10px" }}>Day 7</div>
+      <div className="mr-3" style={{ width: "80px", border: "1px solid black", borderRadius: "5px",textAlign: "center", padding: "10px" }}>Day 8</div>
+      <div className="mr-3" style={{ width: "80px", border: "1px solid black", borderRadius: "5px",textAlign: "center", padding: "10px" }}>Day 9</div>
+      <div className="mr-3" style={{ width: "80px", border: "1px solid black", borderRadius: "5px",textAlign: "center", padding: "10px" }}>Day 10</div>
+    </Row>
+  
 
-      <ListGroup className='justify-content-center my-3' horizontal>
-        <ListGroup.Item>Day 1</ListGroup.Item>
-        <ListGroup.Item>Day 2</ListGroup.Item>
-        <ListGroup.Item>Day 3</ListGroup.Item>
-        <ListGroup.Item>Day 4</ListGroup.Item>
-        <ListGroup.Item>Day 5</ListGroup.Item>
-        <ListGroup.Item>Day 6</ListGroup.Item>
-        <ListGroup.Item>Day 7</ListGroup.Item>
-        <ListGroup.Item>Day 8</ListGroup.Item>
-        <ListGroup.Item>Day 9</ListGroup.Item>
-        <ListGroup.Item>Day 10</ListGroup.Item>
-      </ListGroup>
       <div className="my-5" style={{ textAlign: "center" }}>
         Map
       </div>

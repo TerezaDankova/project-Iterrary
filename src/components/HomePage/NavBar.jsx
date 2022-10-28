@@ -18,7 +18,7 @@ function NavBar (){
 
    return(
 
-      <>
+      <div className="navbarImage">
       <IconContext.Provider value={{color: 'black'}}>
         <Navbar className='navbar' expand="lg">
         <Container>
@@ -42,23 +42,20 @@ function NavBar (){
           <Nav.Link>
               <Link to="/"
                     className={location.pathname === "/" ? "nav-link active" : "nav-link"}
-              > Home </Link>
+              > HOME </Link>
               <Link to="/itineraries"
                     className={location.pathname === "/itineraries" ? "nav-link active" : "nav-link"}
-              > Itineraries </Link>
-              <Link to="/itinerary"
-                    className={location.pathname === "/itinerary" ? "nav-link active" : "nav-link"}
-              > Itinerary </Link>
+              > ITINERARIES </Link>
                <Link to="/tripAdvisor"
                     className={location.pathname === "/tripAdvisor" ? "nav-link active" : "nav-link"}
-              > Trip Advisor </Link>
+              > RESTAURANTS</Link>
 
           </Nav.Link>
         </Nav.Link>
       </Nav>
      
       </IconContext.Provider>
-      </>
+      </div>
    )
 }
 export default NavBar

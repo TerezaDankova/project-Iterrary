@@ -40,57 +40,57 @@ const ItinerariesSlider = () => {
          <SwiperSlide>
          <ItinerariesSliderCard data={{
              imgSrc: "https://images.pexels.com/photos/4846247/pexels-photo-4846247.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260", 
-             title: "ROME FLORENCE VERONA VENICE", 
+             title: "ROME FLORENCE CINQUE TERRE VENICE", 
              text: "10 days trip"
             }}/>   
          </SwiperSlide>
          <SwiperSlide>
             <ItinerariesSliderCard data={{
              imgSrc: "https://images.pexels.com/photos/13567852/pexels-photo-13567852.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" , 
-             title: "hello", 
-             text: "this is it"
+             title: "ROME FLORENCE AMALFI COAST", 
+             text: "10 days trip"
             }}/>                    
          </SwiperSlide>
          <SwiperSlide> 
             <ItinerariesSliderCard data={{
              imgSrc: "https://images.pexels.com/photos/13813574/pexels-photo-13813574.png?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" , 
-             title: "hello", 
-             text: "this is it"
+             title: "VENICE DOLOMITES VERONA SAN MARINO TUSCANY", 
+             text: "10 days trip"
             }}/>     
          </SwiperSlide>
          <SwiperSlide>     
             <ItinerariesSliderCard data={{
              imgSrc: "https://images.pexels.com/photos/13793599/pexels-photo-13793599.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" , 
-             title: "hello", 
-             text: "this is it"
+             title: "CINQUE TERRE TUSCANY LAKE COMO TRENTINO", 
+             text: "7 days trip"
             }}/>     
          </SwiperSlide>
          <SwiperSlide>       
             <ItinerariesSliderCard data={{
              imgSrc: "https://images.pexels.com/photos/572780/pexels-photo-572780.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" , 
-             title: "hello", 
-             text: "this is it"
+             title: "GOLFO DI OROSEI PALAU STINTINO", 
+             text: "7 days trip"
             }}/>
          </SwiperSlide>
          <SwiperSlide>          
             <ItinerariesSliderCard data={{
              imgSrc: "https://images.pexels.com/photos/12637112/pexels-photo-12637112.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" , 
-             title: "hello", 
-             text: "this is it"
+             title: "ROME NAPLES AMALFI COAST MATERA", 
+             text: "7 days trip"
             }}/>
          </SwiperSlide>
          <SwiperSlide>    
             <ItinerariesSliderCard data={{
              imgSrc: "https://images.pexels.com/photos/10692591/pexels-photo-10692591.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" , 
-             title: "hello", 
-             text: "this is it"
+             title: "CATANIA ETNA TAORMINA NOTO", 
+             text: "7 days trip"
             }}/>
          </SwiperSlide>
          <SwiperSlide>   
             <ItinerariesSliderCard data={{
              imgSrc: "https://images.pexels.com/photos/4819574/pexels-photo-4819574.jpeg?auto=compress&cs=tinysrgb&w=1600" , 
-             title: "hello", 
-             text: "this is it"
+             title: "CAGLIARI OLBIA ALGHERO", 
+             text: "7 days trip"
             }}/>
          </SwiperSlide>
       </Swiper>

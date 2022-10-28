@@ -28,15 +28,11 @@ const TripAdvisorHeader = ({getPlacesForCity}) => {
       <Container>
          <div >
             <div>
-               <h6> Here you can the closest restaurants in the city you would like:
+               <h6> Here you can find some nice restaurants:
                </h6>
                   <form onSubmit={onSubmit} >
                      <InputGroup className="mb-3">
                         <InputGroup.Prepend>
-                           <InputGroup.Text 
-                            id="basic-addon1"
-                            >Search
-                            </InputGroup.Text>
                         </InputGroup.Prepend>
                         <FormControl
                            onChange={handleInputChange}

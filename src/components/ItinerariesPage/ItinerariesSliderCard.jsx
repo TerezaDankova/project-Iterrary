@@ -10,15 +10,20 @@ const ItinerariesSliderCard = (props) => {
    let {imgSrc, title, text} = props.data
 
   return (
-   <Card className='card shadow'>
+
+   <Card className='card'>
          <Card.Img className="card-image" variant='top' src={imgSrc} />
-         <Card.Title className='card-title'>{title}
-         </Card.Title>
+           
+               <Card.Title className='card-title'>
+                  {title}
+               </Card.Title>
+      
          <div className='card-text'>{text}</div>
          <Button className="btn" variant="light" 
          onClick={goToItineraryPage}
          > SHOW MORE </Button>
    </Card>
+
   )
 }
 

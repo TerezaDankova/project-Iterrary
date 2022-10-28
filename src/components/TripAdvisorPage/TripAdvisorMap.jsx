@@ -1,8 +1,8 @@
 import GoogleMapReact from 'google-map-react'
 import { fitBounds } from 'google-map-react'
 
-import { Container, Row, ThemeProvider , Col} from 'react-bootstrap'
-import TripAdvisorMarker from './TripAdvisorMarker'
+import { ThemeProvider } from 'react-bootstrap'
+
 import { ImLocation } from 'react-icons/im'
 
 
@@ -21,7 +21,7 @@ const getBoundingBox = (places) => {
 
 const getCenterAndZoom = (places) => {
    if (places.length === 0) {
-      return { center: { lat: 0, lng: 0}, zoom: 14 }
+      return { center: { lat: 0, lng: 0}, zoom: 11 }
    }
 
    const bounds = getBoundingBox(places)
@@ -46,23 +46,13 @@ const TripAdvisorMap = (props) => {
             center={center}
             zoom={zoom}
             margin={[10, 10, 10, 10]}
-            // options={''}
-            // onChange={''}
-            // onChildClick={''}
          >
             {props.places.map((p, index) => (
                                    <ImLocation 
                                    key={index}
                                    lat={Number(p.latitude)} 
-                                   lng={Number(p.longitude)} />
-            //   <Container>
-            //          <TripAdvisorMarker 
-            //          key={index} 
-            //          lat={Number(p.latitude)} 
-            //          lng={Number(p.longitude)} 
-            //          name={p.name} /* Kreyser Avrora */ 
-            //          />    
-            //    </Container>
+                                   lng={Number(p.longitude)}
+                                   size={30} />
             ))}
          </GoogleMapReact>
          </div>

@@ -11,24 +11,24 @@ const Home = () => {
    }
  return (
          <Container className='home' fluid>
-            <Row className='mx-5 justify-content-center' >
+            <div className='box'>
+            <Row className='mx-5 mb-5' >
                <Col sm={12}>
-                     <h1 className='main-text' style={{textAlign: "center"}}> Are you ready for your next adventury?</h1>
+                     <h2 className='main-text' style={{textAlign: "center"}}> ARE YOU READY FOR YOUR NEXT ADVENTURE?</h2>
                </Col>
                <Col sm={12}>
-                     <h5 className='main-text'>
-                        We are luxury travel planning service creating life-changing journey's throughout Italy.
-                     </h5>
+                     <h6 className='main-text'>
+                        HERE YOU CAN FIND AN INSPIRATION FOR YOUR NEXT TRIP AROUND ITALY!
+                     </h6>
                </Col>
-               <Col className="align-self-center">
-              
-                     <Button className="button-home my-5 " variant="light"
+               <Col sm={12}>
+                     <Button className="button-home mt-3"  variant="dark"
                         onClick={goToItinerariesPage}
                      > SHOW ITINERARIES 
                      </Button>
-             
                </Col>
             </Row>
+            </div>
        
              
          </Container>
