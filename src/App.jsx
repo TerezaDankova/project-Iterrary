@@ -4,7 +4,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import Home from './pages/Home';
 import Itineraries from './pages/Itineraries';
-import Itinerary from './pages/Itinerary';
+import Itinerary1 from './pages/Itinerary1';
 import City from './pages/City';
 import Accommodation from './pages/Accommodations';
 import AccommodationPage from './pages/AccommodationPage';
@@ -18,7 +18,7 @@ function App() {
     <Routes>
         <Route path='/' element={<Home />}/>
         <Route path='/itineraries' element={<Itineraries />}/>
-        <Route path='/itinerary' element={<Itinerary />}/>
+        <Route path='/itinerary1' element={<Itinerary1 />}/>
         <Route path='/city' element={<City />}></Route>
         <Route path='/accommodation' element={<Accommodation />}></Route>
         <Route path='/accommodationPage' element={<AccommodationPage/>}></Route>

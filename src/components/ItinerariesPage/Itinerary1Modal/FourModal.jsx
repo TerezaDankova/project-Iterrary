@@ -9,92 +9,100 @@ const FourModal = (props) => {
       <>
        <Modal size='xl' show={props.fourShow} onHide={handleFourClose}>
         <Modal.Header closeButton>
-          <Modal.Title className="ml-4" style={{fontSize: '40px', fontWeight: 'bold', letterSpacing: '3px'}}>DAY FOUR</Modal.Title>
+        <span className="flex-grow-1 d-flex justify-content-center" style={{fontSize: '30px', fontWeight: 'bold', letterSpacing: '5px'}}>DAY FOUR</span>
         </Modal.Header>
         <Modal.Body>
            <Container className='ml-3 pr-5'>
-           On this busy day, you will visit two of Rome's most popular sights, the Colosseum and the Vatican. These can be visited in either order. My recommendation is to start at the Colosseum and end at Vatican City, so you can end the day with spectacular views over Rome from the dome of St. Peter's Basilica.
-           With that being said, the best way to visit the Vatican Museum crowd free is to take an early morning tour, before it “officially” opens. These tours start around 7 am and are pricey. If you arrived yesterday on a red eye flight from the USA, it can be TOUGH to get up early enough to do this 
-           (the time change alone could make it feel like you are setting your alarm for some time around 1 am). But it is worth considering if visiting the Vatican without the crowds is important to you.
-
-           <div className='mt-3' style={{fontSize: '30px', fontWeight: 'bold'}}>THE COLOSSEUM</div>
-           
-            Dating back to 80 AD, this is the largest amphitheater that was ever built at the time. It could hold up to 80,000 people, spectators who were drawn here to watch gladiatorial contests, executions, animal hunts, and re-enactments of famous battles. It is also one of the seven New Wonders of the World.
-            In 2019, this was the most popular tourist attraction in the world, with 7.6 million visitors.
-            Expect BIG crowds at the Colosseum. For the best experience, book your tickets in advance or join a skip-the-line tour, in order to avoid spending your valuable time in line.
-            HOW TO HAVE THE BEST EXPERIENCE AT THE COLOSSEUM:
-            Lines tend to be long to get into the Colosseum, even first thing in the morning.
-
-           <Image className='mt-3' src={'https://images.pexels.com/photos/1797161/pexels-photo-1797161.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'} fluid/>
-           <div className='mt-4'> 
-              <div><span style={{fontWeight: 'bold'}}>Hours:</span> from 9 am till 7 pm/ Closed Mondays</div>
-              <div><span style={{fontWeight: 'bold'}}>Cost:</span> €16 (+ €2 online reservation fee) for the combo-ticket that gets you in to the Roman Forum, Palatine Hill, and the Colosseum; there is also a Full Experience ticket that also includes a visit to the Colosseum arena and underground area for €22</div>
-              <div><span style={{fontWeight: 'bold'}}>Website:</span>  www.colosseum.it </div>
-              <div><span style={{fontWeight: 'bold'}}>Getting Here:</span> The closest metro stop is Colosseo. When you exit the metro station, the Colosseum will be right in front of you.</div>
-           </div>
-           <div className='mt-2'>If lines are long and you do not have advance tickets or you do not want to join a skip-the-line tour, you have two options that might cut down on your waiting time: go first to the Roman Forum (you can get a combo-ticket to later skip the Colosseum ticket lines), or get in line at the Colosseum for the audio-guide. 
-            If you purchase the audio-guide, I read that you get to bypass the main ticket lines. If even you don't plan on using the audio guide, it might be worth paying for it if lines are very long.</div>
-
-           <div className='mt-3' style={{fontSize: '30px', fontWeight: 'bold'}}>THE ROMAN FORUM AND PALATINE HILL</div>
-           <div className='mt-2 pr-3'>
-            The Roman Forum is the historical center of Rome. This is ancient Rome, a complex of government buildings, temples, and marketplaces from 2000 years ago.
-            Palatine Hill is one of the seven hills of Rome. It sits next to the Roman Forum. There are several archaeological sites here and you get a nice view over the Roman Forum.
-            There are several entrances into the Roman Forum. The Palatine Hill entrance on Via di San Gregorio usually has the shortest line. Enter here, and later, exit at the gate nearest the Colosseum.
-
-           </div>
-       
-               <Image className='mt-3' src={'https://images.pexels.com/photos/7220121/pexels-photo-7220121.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'} fluid/>
-      
-           <div className='mt-5' style={{fontSize: '30px', fontWeight: 'bold'}}>VATICAN CITY</div>
-           <div className=' pr-3'>
-           Vatican City is the smallest country in the world. There are three big sights to visit here: the Vatican Museums, the Sistine Chapel, and St. Peter's Basilica.
-           The lines to enter the Vatican Museums and the Sistine Chapel are enormous…up to 3 hour waits on the busiest days. Mid-mornings tend to be the busiest time to tour the Vatican. In the afternoon, crowds tend to lessen, at least a little bit. 
-           To avoid the worst of the crowds, the best times to visit Vatican City are first thing in the morning and just before closing time.
-           </div>
-           <Image className='mt-3' src={'https://images.pexels.com/photos/937690/pexels-photo-937690.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'} fluid/>
-           <div className='mt-3' style={{fontSize: '20px', fontWeight: 'bold'}}>VISITING THE VATICAN MUSEUMS AND SISTINE CHAPEL</div>
-           Reserve your tickets for early afternoon (1 pm or 2 pm). Start at the Vatican Museums and then visit Sistine Chapel.
+         
+           <div className='mt-3' style={{fontSize: '20px', fontWeight: 'bold', letterSpacing: '5px'}}>ACCADEMIA GALLERY</div>
+           <hr  style={{
+               color: '#000000',
+               height: .5,
+               borderColor : '#000000',
+               marginTop: '-2px'
+            }}/>
+           Start your day at the Accademia Gallery. At this gallery you get to see the statue of David, one of the most famous works of art in the world. This is another place where lines can be legendary so we recommend reserving your ticket in advance or joining a skip-the-line tour.
            <div className=''> 
-              <div><span style={{fontWeight: 'bold'}}>Hours:</span> Monday through Saturday 9 am - 6 pm; last entry at 4 pmClosed Sundays, except the last Sunday of the month (9 am - 2 pm, free)</div>
-              <div><span style={{fontWeight: 'bold'}}>Cost:</span> €17, €4 online reservation fee</div>
-              <div><span style={{fontWeight: 'bold'}}>Website:</span> www.biglietteriamusei.vatican.va </div>
-              <div><span style={{fontWeight: 'bold'}}>Getting Here:</span> To get here, take the metro, line A, to the Ottaviano or Cipro stations.</div>
-              <div><span style={{fontWeight: 'bold'}}>Dress Code:</span> Men: no shorts. Women: no bare shoulders and no shorts or skirt shorter than knee length.</div>
+              <div><span className='mr-1' style={{fontWeight: 'bold'}}>Hours:</span> 9:00 am - 6:45 pm; closed Mondays</div>
+              <div><span className='mr-1' style={{fontWeight: 'bold'}}>Cost:</span> €12 + €4 online reservation fee; included on the Firenze Card</div>
+              <div><span className='mr-1' style={{fontWeight: 'bold'}}>Website:</span>  www.accademiagallery.it </div>
            </div>
+           <Image className='mt-3' src={'https://images.pexels.com/photos/3652853/pexels-photo-3652853.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'} fluid/>
+          
+           <div className='mt-5' style={{fontSize: '20px', fontWeight: 'bold', letterSpacing: '5px'}}>SAN LORENZO MARKET & MERCATO CENTRALE</div>
+           <hr  style={{
+               color: '#000000',
+               height: .5,
+               borderColor : '#000000',
+               marginTop: '-2px'
+            }}/>
+           From Accademia Gallery, walk to San Lorenzo Market (8 minute walk). This outdoor market is a great place to shop for pottery, leather goods, and souvenirs. Then go inside of Mercato Centrale. This is a great place to gather food for a picnic lunch.
+           The Central Market is a two-level food market, making up the second half of the San Lorenzo Market. The Mercato Centrale is in a beautiful building designed by Giuseppe Mengoni, the same architect who designed the Galleria Vittoria Emanuele II, and built from 1870-74 when Florence was still capital of Italy. 
+           <Row>
+             <Col>
+               <Image className='mt-3' src={'https://images.pexels.com/photos/13616781/pexels-photo-13616781.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'} fluid/>
+             </Col>
+             <Col>
+               <Image className='mt-3' src={'https://images.pexels.com/photos/12406725/pexels-photo-12406725.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'} fluid/>
+             </Col>
+           </Row>
 
-
-           <div className='mt-5' style={{fontSize: '30px', fontWeight: 'bold'}}>ST. PETER'S BASILICA</div>
-           <div className='pr-3'>
-            St. Peter's Basilica is the largest church in the world. It is also considered to be the most renowned work of Renaissance architecture.
-            St. Peter's Basilica is a separate visit from the Vatican Museums and the Sistine Chapel. Like the Vatican Museums, lines can be long to enter the Basilica, although they tend to be shorter.
-            To skip the line to enter St. Peter's Basilica, consider taking a tour. This guided tour also includes the dome climb. And this tour includes the dome, a visit to St. Peter's tomb, and a visit to the underground grottoes.
-            To get here from the Vatican Museums, you will have to exit the Vatican Museums and walk 20 minutes to St. Peter's Basilica. There is a short-cut from the Sistine Chapel to St. Peter's Basilica, but this is reserved for tour groups (another great reason to join a tour!).
-            It is free to enter St. Peter's Basilica. However, to climb to the top of the Dome, there is a fee:
-            Climb 551 steps to the top of the dome: €8
-            Take the elevator to the terrace, climb 320 steps to the top: €10
-            Is it worth it? Absolutely. Here is the view from the dome of St. Peter's Basilica.
+           <div className='mt-5' style={{fontSize: '20px', fontWeight: 'bold', letterSpacing: '5px'}}>PALAZZO VECCHIO</div>
+           <hr  style={{
+               color: '#000000',
+               height: .5,
+               borderColor : '#000000',
+               marginTop: '-2px'
+            }}/>
+           Palazzo Vecchio is located in Piazza della Signoria. In this square you can visit the Loggia dei Lanzi, an open-air sculpture gallery of Renaissance art.
+           Stroll through the historic heart of Florence to Palazzo Vecchio (1 km, about 15 minutes).
+           The Palazzo Vecchio is the town hall of Florence. Go inside to tour the museum, take a tour of the Roman Ruins, or, you can do our favorite activity, climb the tower.
+           This is one of my favorite views of Florence. From the top of the tower, enjoy panoramic views over the city. This is one of the best spots to get a great photo of the Duomo.
+           <div className=''> 
+              <div><span className='mr-1' style={{fontWeight: 'bold'}}>Hours:</span> April 1 to September 30: 9 am - 7 pm; October 1 to March 31: 9 am - 7 pm; on Thursdays closing time is 2 pm; last admission is one hour before closing</div>
+              <div><span className='mr-1' style={{fontWeight: 'bold'}}>Cost:</span> Museum €12.50, Tower €12.50, combined €17.50; included on the Firenze Card</div>
+              <div><span className='mr-1' style={{fontWeight: 'bold'}}>Website:</span>  www.accademiagallery.it </div>
            </div>
-           <Row className='my-3'> 
+            <Image className='mt-3' src={'https://images.pexels.com/photos/11365684/pexels-photo-11365684.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'} fluid/>
+      
+           <div className='mt-5' style={{fontSize: '20px', fontWeight: 'bold', letterSpacing: '5px'}}>THE UFFIZI MUSEUM</div>
+           <hr  style={{
+               color: '#000000',
+               height: .5,
+               borderColor : '#000000',
+               marginTop: '-2px'
+            }}/>
+           This world famous art museum contains works of art by Renaissance artists Leonardo da Vinci, Botticelli, Michelangelo, and many more.
+           <div className=''> 
+              <div><span className='mr-1' style={{fontWeight: 'bold'}}>Hours:</span> 8:15 am - 6:30 pm; closed Monday</div>
+              <div><span className='mr-1' style={{fontWeight: 'bold'}}>Cost:</span> €20 March 1 to October 31; €12 November 1 to February 28; included on the Firenze Card</div>
+           </div>
+           <Row>
               <Col sm={6}>
-               <Image className='mt-3' src={'https://images.pexels.com/photos/9869786/pexels-photo-9869786.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'} fluid/>
-               </Col>
-               <Col sm={6}>
-               <Image className='mt-3' src={'https://images.pexels.com/photos/4558417/pexels-photo-4558417.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'} fluid/>
-               </Col>
-               <Col sm={12}>
-               <Image className='mt-3' src={'https://images.pexels.com/photos/7464775/pexels-photo-7464775.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'} fluid/>
-               </Col>
-            </Row>
+                <Image className='mt-3' src={'https://www.madeoftuscany.it/image/uffizi/elena-popova-zm2ecmpbr-y-unsplash.jpg'} fluid/>
+              </Col>
+              <Col sm={6}>
+                 <Image className='mt-3' src={'https://static01.nyt.com/images/2018/06/10/arts/10uffizi7/10uffizi7-superJumbo.jpg'} fluid/>
+              </Col>
+           </Row>
 
-           <div className='mb-3'> 
-              <div><span style={{fontWeight: 'bold'}}>Hours of the Basilica:</span> April to September 7 am - 7 pm; October to March 7 am - 6:30 pm</div>
-              <div><span style={{fontWeight: 'bold'}}>Hours of the Dome:</span> April to September 7:30 am - 6:30 pm; October through March 7:30 am - 5 pm</div>
-              <div><span style={{fontWeight: 'bold'}}>Cost:</span> Free; €8 - €10 to climb the dome.</div>
-              <div><span style={{fontWeight: 'bold'}}>Website:</span> www.biglietteriamusei.vatican.va </div>
-              <div><span style={{fontWeight: 'bold'}}>Getting Here:</span> To get here, take the metro, line A, to the Ottaviano or Cipro stations.</div>
-              <div><span style={{fontWeight: 'bold'}}>Dress Code:</span> Men: no shorts. Women: no bare shoulders and no shorts or skirt shorter than knee length.</div>
+           <div className='mt-5' style={{fontSize: '20px', fontWeight: 'bold', letterSpacing: '5px'}}>BOBOLI GARDENS</div>
+           <hr  style={{
+               color: '#000000',
+               height: .5,
+               borderColor : '#000000',
+               marginTop: '-2px'
+            }}/>
+           If you are still doing well on time, stroll across Ponte Vecchio to Boboli Gardens. Once here, you can tour Pitti Palace, see more sculptures, and get another wonderful view of Florence.
+           <div className=''> 
+              <div><span className='mr-1' style={{fontWeight: 'bold'}}>Hours:</span> Boboli Gardens opens at 8:15 am; closing time varies depending upon the season; Pitti Palace is open Tuesday through Sunday from 8:15 pm to 6:30 pm</div>
+              <div><span className='mr-1' style={{fontWeight: 'bold'}}>Cost:</span> €6 for Boboli Gardens; €10 for Pitti Palace; included on the Firenze Card</div>
            </div>
 
+           <Image className='mt-3 mb-3' src={'https://images.pexels.com/photos/4946835/pexels-photo-4946835.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'} fluid/>
+
+
+         
 
            </Container>
         </Modal.Body>

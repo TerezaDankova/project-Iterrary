@@ -1,0 +1,36 @@
+.textMain{
+   text-align: center;
+   font-size: 40px;
+}
+.textCity {
+   text-align: center;
+   font-size: 20px;
+   color:  rgb(0, 121, 47);
+}
+
+.btnGreen {
+   color: rgb(0, 121, 47);
+   width: 80px;
+   border: 1px solid black;
+   border-radius: 5px;
+   text-align: center;
+   padding: 10px;
+}
+.btnGreen:hover {
+   background-color: rgba(9, 113, 14, 0.972);
+   color: rgb(255, 255, 255);
+   font-weight: bold;
+   border: none;
+}
+.mapImage {
+   width: 800px;
+}
+.days {
+   font-size: 16px;
+   font-weight: bold;
+   cursor: pointer;
+}
+.days:hover {
+   color: rgb(0, 121, 47);
+   
+}

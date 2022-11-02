@@ -4,8 +4,8 @@ import "./ItinerariesSliderCard.css"
 
 const ItinerariesSliderCard = (props) => {
    const navigate = useNavigate();
-   const goToItineraryPage = () => {
-      navigate("/itinerary")
+   const goToItinerary1Page = () => {
+      navigate("/itinerary1")
    }
    let {imgSrc, title, text} = props.data
 
@@ -20,7 +20,7 @@ const ItinerariesSliderCard = (props) => {
       
          <div className='card-text'>{text}</div>
          <Button className="btn" variant="light" 
-         onClick={goToItineraryPage}
+         onClick={goToItinerary1Page}
          > SHOW MORE </Button>
    </Card>
 
