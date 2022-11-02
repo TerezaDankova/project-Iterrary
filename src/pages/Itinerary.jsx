@@ -1,10 +1,13 @@
-import { Container, ListGroup, Button, Col, Row} from 'react-bootstrap';
+import { Container, Button, Col, Row } from 'react-bootstrap';
 import { useNavigate } from 'react-router-dom';
-import { connect } from 'react-redux';
-
-import { useEffect } from 'react';
 import Loader from '../components/Loader';
 import { Image } from 'react-bootstrap';
+import OneModal from '../components/ItinerariesPage/Itinerary1Modal/OneModal';
+import TwoModal from '../components/ItinerariesPage/Itinerary1Modal/TwoModal';
+import { useState } from 'react';
+import ThreeModal from '../components/ItinerariesPage/Itinerary1Modal/ThreeModal';
+import FourModal from '../components/ItinerariesPage/Itinerary1Modal/FourModal';
+
 
 
 const Itinerary = (props) => {
@@ -14,6 +17,15 @@ const Itinerary = (props) => {
     navigate("/city");
   };
 
+  const [oneShow, setOneShow] = useState(false);
+  const handleOneShow = () => setOneShow(true);
+  const [twoShow, setTwoShow] = useState(false);
+  const handleTwoShow = () => setTwoShow(true);
+  const [threeShow, setThreeShow] = useState(false);
+  const handleThreeShow = () => setThreeShow(true);
+  const [fourShow, setFourShow] = useState(false);
+  const handleFourShow = () => setFourShow(true);
+
 
   return (
     <>
@@ -22,11 +34,19 @@ const Itinerary = (props) => {
       {props.loadState && <Loader/>}
       <h1 className="my-3" style={{ textAlign: "center" }}> TRIP ITINERARY LIST </h1>
       <h6 style={{ textAlign: "center" }}>ROME - FLORENCE - VERONA - VENEZIA</h6>
+
+
+      <OneModal oneShow={oneShow} setOneShow={setOneShow}/>
+      <TwoModal twoShow={twoShow} setTwoShow={setTwoShow}/>
+      <ThreeModal threeShow={threeShow} setThreeShow={setThreeShow}/>
+      <FourModal fourShow={fourShow} setFourShow={setFourShow}/>
+
+
     <Row className='mt-3'>
-      <div className="mr-3" style={{ width: "80px", border: "1px solid black", borderRadius: "5px", textAlign: "center", padding: "10px" }}>Day 1</div>
-      <div className="mr-3" style={{ width: "80px", border: "1px solid black", borderRadius: "5px",textAlign: "center", padding: "10px" }}>Day 2</div>
-      <div className="mr-3" style={{ width: "80px", border: "1px solid black", borderRadius: "5px",textAlign: "center", padding: "10px" }}>Day 3</div>
-      <div className="mr-3" style={{ width: "80px", border: "1px solid black", borderRadius: "5px",textAlign: "center", padding: "10px" }}>Day 4</div>
+      <span className="mr-3" onClick={handleOneShow} style={{ width: "80px", border: "1px solid black", borderRadius: "5px", textAlign: "center", padding: "10px" }}>Day 1</span>
+      <span className="mr-3" onClick={handleTwoShow} style={{ width: "80px", border: "1px solid black", borderRadius: "5px",textAlign: "center", padding: "10px" }}>Day 2</span>
+      <span className="mr-3" onClick={handleThreeShow} style={{ width: "80px", border: "1px solid black", borderRadius: "5px",textAlign: "center", padding: "10px" }}>Day 3</span>
+      <span className="mr-3" onClick={handleFourShow} style={{ width: "80px", border: "1px solid black", borderRadius: "5px",textAlign: "center", padding: "10px" }}>Day 4</span>
       <div className="mr-3" style={{ width: "80px", border: "1px solid black", borderRadius: "5px",textAlign: "center", padding: "10px" }}>Day 5</div>
       <div className="mr-3" style={{ width: "80px", border: "1px solid black", borderRadius: "5px",textAlign: "center", padding: "10px" }}>Day 6</div>
       <div className="mr-3" style={{ width: "80px", border: "1px solid black", borderRadius: "5px",textAlign: "center", padding: "10px" }}>Day 7</div>
