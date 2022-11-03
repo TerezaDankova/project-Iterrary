@@ -1,12 +1,14 @@
 import { Swiper, SwiperSlide} from 'swiper/react';
 import 'swiper/css';
 import "swiper/css/free-mode"
-import ItinerariesSliderCard from './ItinerariesSliderCard';
 import { Container } from 'react-bootstrap';
-import Itinerary1 from '../../pages/Itinerary1';
+
 import { Card, Button } from 'react-bootstrap';
 import { useNavigate } from 'react-router-dom';
 import "./ItinerariesSliderCard.css"
+import * as MdIcons from 'react-icons/md'
+import * as BsIcons from 'react-icons/bs'
+
 
 
 const ItinerariesSlider = () => {
@@ -14,6 +16,27 @@ const ItinerariesSlider = () => {
    const navigate = useNavigate();
    const goToItinerary1Page = () => {
       navigate("/itinerary1")
+   }
+   const goToItinerary2Page = () => {
+      navigate("/itinerary2")
+   }
+   const goToItinerary3Page = () => {
+      navigate("/itinerary3")
+   }
+   const goToItinerary4Page = () => {
+      navigate("/itinerary4")
+   }
+   const goToItinerary5Page = () => {
+      navigate("/itinerary5")
+   }
+   const goToItinerary6Page = () => {
+      navigate("/itinerary6")
+   }
+   const goToItinerary7Page = () => {
+      navigate("/itinerary7")
+   }
+   const goToItinerary8Page = () => {
+      navigate("/itinerary8")
    }
 
   return (
@@ -51,65 +74,80 @@ const ItinerariesSlider = () => {
             <Card className='card'>
                <Card.Img className="card-image" variant='top' 
                src={'https://images.pexels.com/photos/4846247/pexels-photo-4846247.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260'} />
-                     <Card.Title className='card-title' style={{top: '20%'}}>
+                     <Card.Title className='card-title' style={{top: '30%'}}>
                         <div> ROME </div>
-                        <div> FLORENCE </div>
                         <div> CINQUE TERRE </div>
                         <div> MILAN </div>
                         <div> VENICE </div>
                      </Card.Title>
-               <div className='card-text'>10 DAYS TRIP</div>
-               <Button className="btn" variant="light" 
+               <div className='card-text'>
+                     <div className='marker'> <MdIcons.MdOutlineAirplanemodeActive size={18}/> </div>
+                     <div className='circle'> <BsIcons.BsCircle size={50}/></div>
+                     <div className='daysText'> 10 DAYS TRIP </div>
+               </div>
+               <Button size='sm' className="btn" variant="light" 
                onClick={goToItinerary1Page}
-               > SHOW MORE </Button>
+               > DISCOVER MORE </Button>
             </Card>
          </SwiperSlide>
          <SwiperSlide>
             <Card className='card'>
                <Card.Img className="card-image" variant='top' 
                src={'https://images.pexels.com/photos/572780/pexels-photo-572780.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'} />
-                      <Card.Title className='card-title' style={{top: '30%'}}>
+                      <Card.Title className='card-title' style={{top: '35%'}}>
                         <div> ROME </div>
                         <div> FLORENCE </div>
                         <div> THE MALFI COAST </div>
                      </Card.Title>
-               <div className='card-text'>10 DAYS TRIP</div>
-               <Button className="btn" variant="light" 
-               onClick={goToItinerary1Page}
-               > SHOW MORE </Button>
+                     <div className='card-text'>
+                     <div className='marker'> <MdIcons.MdOutlineAirplanemodeActive size={18}/> </div>
+                     <div className='circle'> <BsIcons.BsCircle size={50}/></div>
+                     <div className='daysText'> 10 DAYS TRIP </div>
+               </div>
+               <Button size='sm' className="btn" variant="light" 
+               onClick={goToItinerary2Page}
+               > DISCOVER MORE </Button>
             </Card>  
          </SwiperSlide>
          <SwiperSlide> 
             <Card className='card'>
                <Card.Img className="card-image" variant='top' 
                src={'https://images.pexels.com/photos/9148687/pexels-photo-9148687.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500'} />
-                     <Card.Title className='card-title' style={{top: '20%'}}>
+                     <Card.Title className='card-title' style={{top: '30%'}}>
                         <div> VENICE </div>
                         <div> DOLOMITES </div>
                         <div> VERONA </div>
                         <div> SAN MARINO </div>
                         <div> TUSCANY </div>
                      </Card.Title>
-               <div className='card-text'>10 DAYS TRIP</div>
-               <Button className="btn" variant="light" 
-               onClick={goToItinerary1Page}
-               > SHOW MORE </Button>
+               <div className='card-text'>
+                     <div className='marker'> <MdIcons.MdOutlineAirplanemodeActive size={18}/> </div>
+                     <div className='circle'> <BsIcons.BsCircle size={50}/></div>
+                     <div className='daysText'> 10 DAYS TRIP </div>
+               </div>
+               <Button size='sm' className="btn" variant="light" 
+               onClick={goToItinerary3Page}
+               > DISCOVER MORE </Button>
             </Card>  
          </SwiperSlide>
          <SwiperSlide>     
             <Card className='card'>
                <Card.Img className="card-image" variant='top' 
                src={'https://images.pexels.com/photos/13567852/pexels-photo-13567852.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260'} />
-                     <Card.Title className='card-title' style={{top: '30%'}}>
+                     <Card.Title className='card-title' style={{top: '35%'}}>
                         <div> CINQUE TERRE </div>
                         <div> TUSCANY </div>
                         <div> LAKE COMO </div>
                         <div> TRENTINO </div>
                      </Card.Title>
-               <div className='card-text'>7 DAYS TRIP</div>
-               <Button className="btn" variant="light" 
-               onClick={goToItinerary1Page}
-               > SHOW MORE </Button>
+               <div className='card-text'>
+                     <div className='marker'> <MdIcons.MdOutlineAirplanemodeActive size={18}/> </div>
+                     <div className='circle'> <BsIcons.BsCircle size={50}/></div>
+                     <div className='daysText'> 7 DAYS TRIP </div>
+               </div>
+               <Button size='sm' className="btn" variant="light" 
+               onClick={goToItinerary4Page}
+               > DISCOVER MORE </Button>
             </Card>  
          </SwiperSlide>
          <SwiperSlide>       
@@ -121,10 +159,14 @@ const ItinerariesSlider = () => {
                         <div> PALAU </div>
                         <div> STINTINO </div>
                      </Card.Title>
-               <div className='card-text'>7 DAYS TRIP</div>
-               <Button className="btn" variant="light" 
-               onClick={goToItinerary1Page}
-               > SHOW MORE </Button>
+               <div className='card-text'>
+                     <div className='marker'> <MdIcons.MdOutlineAirplanemodeActive size={18}/> </div>
+                     <div className='circle'> <BsIcons.BsCircle size={50}/></div>
+                     <div className='daysText'> 7 DAYS TRIP </div>
+               </div>
+               <Button size='sm' className="btn" variant="light" 
+               onClick={goToItinerary5Page}
+               > DISCOVER MORE </Button>
             </Card>  
          </SwiperSlide>
          <SwiperSlide>          
@@ -137,10 +179,14 @@ const ItinerariesSlider = () => {
                         <div> AMALFI COAST </div>
                         <div> MATERA </div>
                      </Card.Title>
-               <div className='card-text'>7 DAYS TRIP</div>
-               <Button className="btn" variant="light" 
-               onClick={goToItinerary1Page}
-               > SHOW MORE </Button>
+               <div className='card-text'>
+                     <div className='marker'> <MdIcons.MdOutlineAirplanemodeActive size={18}/> </div>
+                     <div className='circle'> <BsIcons.BsCircle size={50}/></div>
+                     <div className='daysText'> 7 DAYS TRIP </div>
+               </div>
+               <Button size='sm' className="btn" variant="light" 
+               onClick={goToItinerary6Page}
+               > DISCOVER MORE </Button>
             </Card>  
          </SwiperSlide>
          <SwiperSlide>    
@@ -153,25 +199,33 @@ const ItinerariesSlider = () => {
                         <div> TAORMINA </div>
                         <div> NOTO </div>
                      </Card.Title>
-               <div className='card-text'>7 DAYS TRIP</div>
-               <Button className="btn" variant="light" 
-               onClick={goToItinerary1Page}
-               > SHOW MORE </Button>
+               <div className='card-text'>
+                     <div className='marker'> <MdIcons.MdOutlineAirplanemodeActive size={18}/> </div>
+                     <div className='circle'> <BsIcons.BsCircle size={50}/></div>
+                     <div className='daysText'> 7 DAYS TRIP </div>
+               </div>
+               <Button size='sm' className="btn" variant="light" 
+               onClick={goToItinerary7Page}
+               > DISCOVER MORE </Button>
             </Card>  
          </SwiperSlide>
          <SwiperSlide>   
             <Card className='card'>
                <Card.Img className="card-image" variant='top' 
                src={'https://images.pexels.com/photos/6694379/pexels-photo-6694379.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'} />
-                     <Card.Title className='card-title' style={{top: '30%'}}>
+                     <Card.Title className='card-title' style={{top: '35%'}}>
                         <div> CAGLIARI </div>
                         <div> OLBIA </div>
                         <div> ALGHERO </div>
                      </Card.Title>
-               <div className='card-text'>7 DAYS TRIP</div>
-               <Button className="btn" variant="light" 
-               onClick={goToItinerary1Page}
-               > SHOW MORE </Button>
+               <div className='card-text'>
+                     <div className='marker'> <MdIcons.MdOutlineAirplanemodeActive size={18}/> </div>
+                     <div className='circle'> <BsIcons.BsCircle size={50}/></div>
+                     <div className='daysText'> 7 DAYS TRIP </div>
+               </div>
+               <Button size='sm' className="btn" variant="light" 
+               onClick={goToItinerary8Page}
+               > DISCOVER MORE </Button>
             </Card>  
          </SwiperSlide>
       </Swiper>

@@ -1,7 +1,14 @@
+.wrapper {
+   max-height: 35rem;
+   max-width: 25rem;
+   background-color: black;
+   position: absolute;
+}
 .card {
    max-height: 35rem;
    max-width: 25rem
 }
+
 .card-image {
    height: 35rem;
    max-width: 25rem
@@ -17,22 +24,43 @@
 }
 .card-text {
    position: absolute;
-   top: 90%;
-   left: 140px;
+   top: 5%;
+   left: 10px;
    right: 140px;
    font-size: 14px;
    text-align: center;
    color: white;
-   background-color: rgba(106, 105, 105, 0.824);
    padding: 5px;
    border-radius: 5px;
 }
+.marker {
+   position: absolute;
+   top: 20%;
+   left: 27px;
+}
+.marker:hover {
+   color: black;
+}
+.circle {
+   position: absolute;
+   top: -100%;
+   left: 10px;
+}
+.circle:hover {
+   color: black;
+}
+.daysText {
+   position: absolute;
+   top: 30%;
+   left: 70px;
+}
 .btn {
    position: absolute; 
-   top: 80%;
+   top: 90%;
    left: 130px;
    right: 130px;
    background-color: rgba(255, 255, 255, 0.240);
    color: white;
    border-color: white;
 }
+
