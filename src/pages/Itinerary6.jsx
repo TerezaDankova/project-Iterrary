@@ -2,7 +2,7 @@ import { Container, Row, Image, Col} from 'react-bootstrap';
 import Loader from '../components/Loader';
 import { useState } from 'react';
 
-import Map1 from '../pictures/map1.jpg'
+import Map6 from '../pictures/map6.jpg'
 import './css/Itinerary.css'
 
 import OneModal6 from '../components/ItinerariesPage/Itinerary6Modal/OneModal6';
@@ -38,7 +38,7 @@ const Itinerary6 = (props) => {
     <Container>
       {props.loadState && <Loader/>}
       <h1 className="my-3 textMain"> TRIP ITINERARY LIST </h1>
-      <h6 className="textCity">ROME - FLORENCE - CINQUE TERRE - MILAN - VENICE</h6>
+      <h6 className="textCityOrange">ROME - NAPLES - AMALFI COAST - MATERA</h6>
 
 
       <OneModal6 one6Show={one6Show} setOne6Show={setOne6Show}/>
@@ -52,29 +52,29 @@ const Itinerary6 = (props) => {
 
 
     <Row className='mt-3 mb-3 flex-grow-1 d-flex justify-content-center'>
-      <span className="mr-3 btnGreen" onClick={handleOne6Show} >Day 1</span>
-      <span className="mr-3 btnGreen" onClick={handleTwo6Show} >Day 2</span>
-      <span className="mr-3 btnGreen" onClick={handleThree6Show} >Day 3</span>
-      <span className="mr-3 btnGreen" onClick={handleFour6Show} >Day 4</span>
-      <span className="mr-3 btnGreen" onClick={handleFive6Show} >Day 5</span>
-      <span className="mr-3 btnGreen" onClick={handleSix6Show} >Day 6</span>
-      <span className="mr-3 btnGreen" onClick={handleSeven6Show} >Day 7</span>
+      <span className="mr-3 btnOrange" onClick={handleOne6Show} >Day 1</span>
+      <span className="mr-3 btnOrange" onClick={handleTwo6Show} >Day 2</span>
+      <span className="mr-3 btnOrange" onClick={handleThree6Show} >Day 3</span>
+      <span className="mr-3 btnOrange" onClick={handleFour6Show} >Day 4</span>
+      <span className="mr-3 btnOrange" onClick={handleFive6Show} >Day 5</span>
+      <span className="mr-3 btnOrange" onClick={handleSix6Show} >Day 6</span>
+      <span className="mr-3 btnOrange" onClick={handleSeven6Show} >Day 7</span>
     </Row>
     <Row>
       <Col sm={8}>
       <div className="mt-5 mb-4" style={{ textAlign: "center" }}>
-        <Image className="mapImage" src={Map1} fluid/>
+        <Image className="mapImage" src={Map6} fluid/>
       </div>
       </Col>
       <Col sm={4}>
       <div className='mt-5'>
-        <div><span className='mr-2 days' onClick={handleOne6Show}>Day 1:</span><span>Arrive in Rome</span></div>
+        <div><span className='mr-2 days' onClick={handleOne6Show}>Day 1:</span><span>Rome</span></div>
         <div><span className='mr-2 days' onClick={handleTwo6Show}>Day 2:</span><span>Rome</span></div>
-        <div><span className='mr-2 days' onClick={handleThree6Show}>Day 3:</span><span>Florence</span></div>
-        <div><span className='mr-2 days' onClick={handleFour6Show}>Day 4:</span><span>Florence</span></div>
-        <div><span className='mr-2 days' onClick={handleFive6Show}>Day 5:</span><span>Tuscany day trip</span></div>
-        <div><span className='mr-2 days' onClick={handleSix6Show}>Day 6:</span><span>Pisa</span></div>
-        <div><span className='mr-2 days' onClick={handleSeven6Show}>Day 7:</span><span>Cinque Terre</span></div>
+        <div><span className='mr-2 days' onClick={handleThree6Show}>Day 3:</span><span>Naples & Amalfi Coast</span></div>
+        <div><span className='mr-2 days' onClick={handleFour6Show}>Day 4:</span><span>Naples & Amalfi Coast</span></div>
+        <div><span className='mr-2 days' onClick={handleFive6Show}>Day 5:</span><span>Naples & Amalfi Coast</span></div>
+        <div><span className='mr-2 days' onClick={handleSix6Show}>Day 6:</span><span>Matera</span></div>
+        <div><span className='mr-2 days' onClick={handleSeven6Show}>Day 7:</span><span>Matera</span></div>
       </div>
       </Col>
       </Row>

@@ -101,9 +101,6 @@ const FourModal = (props) => {
 
            <Image className='mt-3 mb-3' src={'https://images.pexels.com/photos/4946835/pexels-photo-4946835.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'} fluid/>
 
-
-         
-
            </Container>
         </Modal.Body>
        </Modal>

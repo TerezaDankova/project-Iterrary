@@ -18,7 +18,7 @@ const SixModal = (props) => {
            The Cinque Terre is a UNESCO World Heritage Site and one of Italy's most photogenic destinations. Five colorful towns are perched on the dramatic coastline of Italy. Each town offers something a little bit different than the others, and part of the fun of visiting the Cinque Terre is picking your favorite one.
            Once in the Cinque Terre, check into your hotel. Spend the rest of the day exploring the town where you are staying. For a great sunset spot, visit Riomaggiore and walk down to the waterfront.
      
-           <div className='mt-5' style={{fontSize: '20px', fontWeight: 'bold', letterSpacing: '5px'}}>PISA</div>
+           <div className='mt-3' style={{fontSize: '20px', fontWeight: 'bold', letterSpacing: '5px'}}>PISA</div>
            <hr  style={{
                color: '#000000',
                height: .5,

@@ -7,6 +7,11 @@
    font-size: 20px;
    color:  rgb(0, 121, 47);
 }
+.textCityOrange {
+   text-align: center;
+   font-size: 20px;
+   color:  #ed5901;
+}
 
 .btnGreen {
    color: rgb(0, 121, 47);
@@ -32,5 +37,18 @@
 }
 .days:hover {
    color: rgb(0, 121, 47);
-   
+}
+.btnOrange {
+   color: #ed5901;
+   width: 80px;
+   border: 1px solid black;
+   border-radius: 5px;
+   text-align: center;
+   padding: 10px;
+}
+.btnOrange:hover {
+   background-color: #ed5901;
+   color: rgb(255, 255, 255);
+   font-weight: bold;
+   border: none;
 }

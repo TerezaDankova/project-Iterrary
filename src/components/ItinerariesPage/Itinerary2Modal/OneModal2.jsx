@@ -13,10 +13,7 @@ const OneModal2 = (props) => {
         </Modal.Header>
         <Modal.Body>
            <Container className='ml-3 pr-5'>
-           Ideally,  plan to arrive in Rome early in the morning, or even the night before, to make the most of this day. If you arrive in the morning on a red eye flight, this first day can be challenging. Drop your luggage off at your hotel and spend the afternoon sightseeing in Rome. 
-           I do not recommend making big plans today (no Vatican or Colosseum visits) because you might be exhausted.
-          
-           <div className='mt-3' style={{fontSize: '20px', fontWeight: 'bold', letterSpacing: '5px'}}>BORGHESE GALLERY</div>
+           <div className='' style={{fontSize: '20px', fontWeight: 'bold', letterSpacing: '5px'}}>BORGHESE GALLERY</div>
            <hr  style={{
                color: '#000000',
                height: .5,

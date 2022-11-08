@@ -2,7 +2,7 @@ import { Container, Row, Image, Col} from 'react-bootstrap';
 import Loader from '../components/Loader';
 import { useState } from 'react';
 
-import Map1 from '../pictures/map1.jpg'
+import Map7 from '../pictures/map7.jpg'
 import './css/Itinerary.css'
 
 import OneModal7 from '../components/ItinerariesPage/Itinerary7Modal/OneModal7';
@@ -38,7 +38,7 @@ const Itinerary7 = (props) => {
     <Container>
       {props.loadState && <Loader/>}
       <h1 className="my-3 textMain"> TRIP ITINERARY LIST </h1>
-      <h6 className="textCity">ROME - FLORENCE - CINQUE TERRE - MILAN - VENICE</h6>
+      <h6 className="textCity">CATANIA - ETNA - TAORMINA - NOTO</h6>
 
 
       <OneModal7 one7Show={one7Show} setOne7Show={setOne7Show}/>
@@ -61,20 +61,20 @@ const Itinerary7 = (props) => {
       <span className="mr-3 btnGreen" onClick={handleSeven7Show} >Day 7</span>
     </Row>
     <Row>
-      <Col sm={8}>
+      <Col sm={7}>
       <div className="mt-5 mb-4" style={{ textAlign: "center" }}>
-        <Image className="mapImage" src={Map1} fluid/>
+        <Image className="mapImage" src={Map7} fluid/>
       </div>
       </Col>
-      <Col sm={4}>
+      <Col sm={5}>
       <div className='mt-5'>
-        <div><span className='mr-2 days' onClick={handleOne7Show}>Day 1:</span><span>Arrive in Rome</span></div>
-        <div><span className='mr-2 days' onClick={handleTwo7Show}>Day 2:</span><span>Rome</span></div>
-        <div><span className='mr-2 days' onClick={handleThree7Show}>Day 3:</span><span>Florence</span></div>
-        <div><span className='mr-2 days' onClick={handleFour7Show}>Day 4:</span><span>Florence</span></div>
-        <div><span className='mr-2 days' onClick={handleFive7Show}>Day 5:</span><span>Tuscany day trip</span></div>
-        <div><span className='mr-2 days' onClick={handleSix7Show}>Day 6:</span><span>Pisa</span></div>
-        <div><span className='mr-2 days' onClick={handleSeven7Show}>Day 7:</span><span>Cinque Terre</span></div>
+        <div><span className='mr-2 days' onClick={handleOne7Show}>Day 1:</span><span>Catania</span></div>
+        <div><span className='mr-2 days' onClick={handleTwo7Show}>Day 2:</span><span>Etna & Taormina</span></div>
+        <div><span className='mr-2 days' onClick={handleThree7Show}>Day 3:</span><span>Siracuga & Oritiga </span></div>
+        <div><span className='mr-2 days' onClick={handleFour7Show}>Day 4:</span><span>Laghetti Di Cavagrande & Marzameni & Noto</span></div>
+        <div><span className='mr-2 days' onClick={handleFive7Show}>Day 5:</span><span>Modica & Scicli & Ragusa Ibla</span></div>
+        <div><span className='mr-2 days' onClick={handleSix7Show}>Day 6:</span><span>Ragusa Ibla & Caltagirone & Catania</span></div>
+        <div><span className='mr-2 days' onClick={handleSeven7Show}>Day 7:</span><span>Aci Castello & Acireale</span></div>
       </div>
       </Col>
       </Row>

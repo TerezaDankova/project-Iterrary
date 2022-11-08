@@ -40,7 +40,7 @@ const ItinerariesSlider = () => {
    }
 
   return (
-   <Container className='my-5 mx-auto' fluid>
+   <Container className='mt-5 mb-5 mx-auto' fluid>
       <Swiper
       FreeMode={true}
       grabCursor={true}
@@ -73,7 +73,7 @@ const ItinerariesSlider = () => {
          <SwiperSlide>
             <Card className='card'>
                <Card.Img className="card-image" variant='top' 
-               src={'https://images.pexels.com/photos/4846247/pexels-photo-4846247.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260'} />
+               src={'https://images.pexels.com/photos/4846247/pexels-photo-4846247.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260'}  onClick={goToItinerary1Page} />
                      <Card.Title className='card-title' style={{top: '30%'}}>
                         <div> ROME </div>
                         <div> CINQUE TERRE </div>
@@ -93,7 +93,7 @@ const ItinerariesSlider = () => {
          <SwiperSlide>
             <Card className='card'>
                <Card.Img className="card-image" variant='top' 
-               src={'https://images.pexels.com/photos/572780/pexels-photo-572780.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'} />
+               src={'https://images.pexels.com/photos/572780/pexels-photo-572780.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'}  onClick={goToItinerary2Page}/>
                       <Card.Title className='card-title' style={{top: '35%'}}>
                         <div> ROME </div>
                         <div> FLORENCE </div>
@@ -112,7 +112,7 @@ const ItinerariesSlider = () => {
          <SwiperSlide> 
             <Card className='card'>
                <Card.Img className="card-image" variant='top' 
-               src={'https://images.pexels.com/photos/9148687/pexels-photo-9148687.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500'} />
+               src={'https://images.pexels.com/photos/9148687/pexels-photo-9148687.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500'} onClick={goToItinerary3Page} />
                      <Card.Title className='card-title' style={{top: '30%'}}>
                         <div> VENICE </div>
                         <div> DOLOMITES </div>
@@ -133,7 +133,7 @@ const ItinerariesSlider = () => {
          <SwiperSlide>     
             <Card className='card'>
                <Card.Img className="card-image" variant='top' 
-               src={'https://images.pexels.com/photos/13567852/pexels-photo-13567852.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260'} />
+               src={'https://images.pexels.com/photos/13567852/pexels-photo-13567852.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260'}  onClick={goToItinerary4Page} />
                      <Card.Title className='card-title' style={{top: '35%'}}>
                         <div> CINQUE TERRE </div>
                         <div> TUSCANY </div>
@@ -153,7 +153,7 @@ const ItinerariesSlider = () => {
          <SwiperSlide>       
             <Card className='card'>
                <Card.Img className="card-image" variant='top' 
-               src={'https://images.pexels.com/photos/1615677/pexels-photo-1615677.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260'} />
+               src={'https://images.pexels.com/photos/1615677/pexels-photo-1615677.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260'}  onClick={goToItinerary5Page}/>
                      <Card.Title className='card-title' style={{top: '30%'}}>
                         <div> GOLFO DI OROSEI </div>
                         <div> PALAU </div>
@@ -172,7 +172,7 @@ const ItinerariesSlider = () => {
          <SwiperSlide>          
             <Card className='card'>
                <Card.Img className="card-image" variant='top' 
-               src={'https://images.pexels.com/photos/9869786/pexels-photo-9869786.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260'} />
+               src={'https://images.pexels.com/photos/9869786/pexels-photo-9869786.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260'} onClick={goToItinerary6Page} />
                      <Card.Title className='card-title' style={{top: '30%'}}>
                         <div> ROME </div>
                         <div> NAPLES </div>
@@ -192,7 +192,7 @@ const ItinerariesSlider = () => {
          <SwiperSlide>    
             <Card className='card'>
                <Card.Img className="card-image" variant='top' 
-               src={'https://images.pexels.com/photos/10906342/pexels-photo-10906342.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'} />
+               src={'https://images.pexels.com/photos/10906342/pexels-photo-10906342.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'} onClick={goToItinerary7Page}/>
                      <Card.Title className='card-title' style={{top: '30%'}}>
                         <div> CATANIA </div>
                         <div> ETNA </div>
@@ -212,7 +212,7 @@ const ItinerariesSlider = () => {
          <SwiperSlide>   
             <Card className='card'>
                <Card.Img className="card-image" variant='top' 
-               src={'https://images.pexels.com/photos/6694379/pexels-photo-6694379.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'} />
+               src={'https://images.pexels.com/photos/6694379/pexels-photo-6694379.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'} onClick={goToItinerary8Page}/>
                      <Card.Title className='card-title' style={{top: '35%'}}>
                         <div> CAGLIARI </div>
                         <div> OLBIA </div>

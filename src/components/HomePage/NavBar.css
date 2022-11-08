@@ -15,7 +15,7 @@
    background: none;
 }
 .nav-menu {
-   background-color: rgb(226, 232, 240);
+   background-color: rgb(83, 100, 53);
    width: 400px;
    height: 100vh;
    display: flex;
@@ -47,7 +47,8 @@
    border: 3px solid rgba(250, 249, 249, 0.27);
    color: rgb(36, 36, 36);
    font-weight: bold;
-   background-color: rgba(254, 254, 254, 0.59); 
+   background-color: rgba(255, 255, 255, 0.853); 
+   border-radius: 10px;
  }
  .nav-link {
    color: rgb(255, 255, 255);

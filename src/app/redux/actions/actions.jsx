@@ -3,9 +3,11 @@ import { Zoom } from "swiper";
 export const LOADING = " LOADING";
 export const SET_PLACES = 'SET_PLACES'
 export const FETCHED_PLACES = 'FETCHED_PLACES'
+export const FETCHED_CURRENT_POSITION = 'FETCHED_CURRENT_POSITION'
+export const SELECTED_PLACE = 'SELECTED_PLACE'
 
 export const setLoading =isLoading =>({
-   type:LOADING,
+   type: LOADING,
    payload: isLoading
  });
 
@@ -17,6 +19,16 @@ export const setPlaces = places =>({
  export const fetchedPlaces = places =>({
    type: FETCHED_PLACES,
    payload: places
+ });
+
+ export const fetchedCurrentPosition = position =>({
+   type: FETCHED_CURRENT_POSITION,
+   payload: position
+ });
+
+ export const selectedPlace = place =>({
+   type: SELECTED_PLACE,
+   payload: place
  });
 
 
@@ -94,6 +106,12 @@ const getRestaurantsFromCoordinates = async (coordinates) => {
 }
 
 
+// export const setSelectedPlace = (place) => {
+//    return async (dispatch) => {
+//       dispatch(selectedPlace(place))
+//    }
+// } 
+
 export const getPlacesForCity = (cityName) => {
    return async (dispatch) => {
       console.log("Searching: " + cityName)
@@ -110,9 +128,9 @@ export const getPlacesInCurrentPosition = () => {
    return async (dispatch) => {
       try {
             const position = await getPosition();
-
             const crd = position.coords;
-         
+            dispatch(fetchedCurrentPosition(crd))
+
             console.log('Your current position is:');
             console.log(`Latitude : ${crd.latitude}`);
             console.log(`Longitude: ${crd.longitude}`);
@@ -126,7 +144,8 @@ export const getPlacesInCurrentPosition = () => {
 
             const crd = { latitude: 45.465, longitude: 9.186 };
             const restaurants = await getRestaurantsFromCoordinates(crd)
-
+            
+            dispatch(fetchedCurrentPosition(null))
             dispatch(fetchedPlaces(restaurants))
       }
    }

@@ -9,10 +9,11 @@ function Itineraries() {
   return (
     <div className='itineraries'>
        <IntroductionItineraries />
-       <ItinerariesSlider />
-      <Container className='mt-5'> 
+       <Container> 
             <ExplanationText />
       </Container> 
+      <ItinerariesSlider />
+
     </div>
 
   )

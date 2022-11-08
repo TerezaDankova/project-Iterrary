@@ -2,7 +2,7 @@
 import { Container, InputGroup, FormControl } from "react-bootstrap"
 import { getPlacesForCity } from "../../app/redux/actions/actions"
 import { connect } from "react-redux"
-import { useState } from "react"
+import { useState} from "react"
 
 const mapDispatchToProps = dispatch => {
    return {
@@ -24,6 +24,7 @@ const TripAdvisorHeader = ({getPlacesForCity}) => {
       event.preventDefault()
       getPlacesForCity(city)
     }
+
    return (
       <Container>
          <div >

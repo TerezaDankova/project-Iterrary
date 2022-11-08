@@ -2,7 +2,7 @@ import { Container, Row, Image, Col} from 'react-bootstrap';
 import Loader from '../components/Loader';
 import { useState } from 'react';
 
-import Map1 from '../pictures/map1.jpg'
+import Map3 from '../pictures/map3.jpg'
 import './css/Itinerary.css'
 import OneModal3 from '../components/ItinerariesPage/Itinerary3Modal/OneModal3';
 import TwoModal3 from '../components/ItinerariesPage/Itinerary3Modal/TwoModal3';
@@ -45,7 +45,7 @@ const Itinerary3 = (props) => {
     <Container>
       {props.loadState && <Loader/>}
       <h1 className="my-3 textMain"> TRIP ITINERARY LIST </h1>
-      <h6 className="textCity">ROME - FLORENCE - CINQUE TERRE - MILAN - VENICE</h6>
+      <h6 className="textCity">VENICE - DOLOMITES - VERONA - SAN MARINO AND TUSCANY</h6>
 
 
       <OneModal3 one3Show={one3Show} setOne3Show={setOne3Show}/>
@@ -75,20 +75,20 @@ const Itinerary3 = (props) => {
     <Row>
       <Col sm={8}>
       <div className="mt-5 mb-4" style={{ textAlign: "center" }}>
-        <Image className="mapImage" src={Map1} fluid/>
+        <Image className="mapImage" src={Map3} fluid/>
       </div>
       </Col>
       <Col sm={4}>
       <div className='mt-5'>
-        <div><span className='mr-2 days' onClick={handleOne3Show}>Day 1:</span><span>Arrive in Rome</span></div>
-        <div><span className='mr-2 days' onClick={handleTwo3Show}>Day 2:</span><span>Rome</span></div>
-        <div><span className='mr-2 days' onClick={handleThree3Show}>Day 3:</span><span>Florence</span></div>
-        <div><span className='mr-2 days' onClick={handleFour3Show}>Day 4:</span><span>Florence</span></div>
-        <div><span className='mr-2 days' onClick={handleFive3Show}>Day 5:</span><span>Tuscany day trip</span></div>
-        <div><span className='mr-2 days' onClick={handleSix3Show}>Day 6:</span><span>Pisa</span></div>
-        <div><span className='mr-2 days' onClick={handleSeven3Show}>Day 7:</span><span>Cinque Terre</span></div>
-        <div><span className='mr-2 days' onClick={handleEight3Show}>Day 8:</span><span>Milan</span></div>
-        <div><span className='mr-2 days' onClick={handleNine3Show}>Day 9:</span><span>Venice</span></div>
+        <div><span className='mr-2 days' onClick={handleOne3Show}>Day 1:</span><span>Arrive in Venice</span></div>
+        <div><span className='mr-2 days' onClick={handleTwo3Show}>Day 2:</span><span>Venice</span></div>
+        <div><span className='mr-2 days' onClick={handleThree3Show}>Day 3:</span><span>Dolomites</span></div>
+        <div><span className='mr-2 days' onClick={handleFour3Show}>Day 4:</span><span>Dolomites</span></div>
+        <div><span className='mr-2 days' onClick={handleFive3Show}>Day 5:</span><span>Verona</span></div>
+        <div><span className='mr-2 days' onClick={handleSix3Show}>Day 6:</span><span>San Marino</span></div>
+        <div><span className='mr-2 days' onClick={handleSeven3Show}>Day 7:</span><span>Florence</span></div>
+        <div><span className='mr-2 days' onClick={handleEight3Show}>Day 8:</span><span>Tuscany</span></div>
+        <div><span className='mr-2 days' onClick={handleNine3Show}>Day 9:</span><span>Tuscany</span></div>
         <div><span className='mr-2 days' onClick={handleTen3Show}>Day 10:</span><span>Fly home</span></div>
       </div>
       </Col>

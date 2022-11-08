@@ -13,51 +13,63 @@ const OneModal3 = (props) => {
         </Modal.Header>
         <Modal.Body>
            <Container className='ml-3 pr-5'>
-           Ideally,  plan to arrive in Rome early in the morning, or even the night before, to make the most of this day. If you arrive in the morning on a red eye flight, this first day can be challenging. Drop your luggage off at your hotel and spend the afternoon sightseeing in Rome. 
-           I do not recommend making big plans today (no Vatican or Colosseum visits) because you might be exhausted.
-          
-           <div className='mt-3' style={{fontSize: '20px', fontWeight: 'bold', letterSpacing: '5px'}}>BORGHESE GALLERY</div>
+              
+           <div className='mt-3' style={{fontSize: '20px', fontWeight: 'bold', letterSpacing: '5px'}}>VENICE</div>
            <hr  style={{
                color: '#000000',
                height: .5,
                borderColor : '#000000',
                marginTop: '-2px'
             }}/>
-           The Borghese contains one of the best collections of art in the world. Art by Bernini, Raphael, Caravaggio, and Titian are all on display. This is a must-see for art aficionados. If you arrive into Rome in the morning, you have enough time to visit the Borghese midday, before the afternoon stroll through the city center.
-           After your visit to the Borghese, stroll through the gardens that surround the museum. They are beautiful!
-           <div className=''> 
-              <div><span className='mr-1' style={{fontWeight: 'bold'}}>Hours:</span> from 9 am till 7 pm/ Closed Mondays</div>
-              <div><span className='mr-1' style={{fontWeight: 'bold'}}>Cost:</span> €13, +€2 reservation fee, prices can increase during special exhibits</div>
-              <div><span className='mr-1' style={{fontWeight: 'bold'}}>Website:</span>  www.galleriaborghese.it </div>
-              <div><span className='mr-1' style={{fontWeight: 'bold'}}>Getting Here:</span> The closest metro station is Barberini on the A line (1.4 km, 17 minutes walking time). You can also get here by bus, taxi, and Uber. </div>
-           </div>
-           <Image className='mt-3' src={'https://images.pexels.com/photos/159862/art-school-of-athens-raphael-italian-painter-fresco-159862.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'} fluid/>
+           Our favorite thing to do in Venice is to wander the canals, eat the food, and drink the coffee. But there are several wonderful sights to visit while you are here.
+           Venice has been known as "La Dominante", "La Serenissima", "Queen of the Adriatic", "City of Water", "City of Masks", "City of Bridges", "The Floating City", and "City of Canals".
+           The lagoon and a part of the city are listed as a UNESCO World Heritage Site. Although the city is facing some challenges (including an excessive number of tourists and problems caused by pollution, 
+           tide peaks and cruise ships sailing too close to buildings), Venice remains a very popular tourist destination, a major cultural centre, and has been ranked many times the most beautiful city in the world.
+           It has been described by The Times as one of Europe's most romantic cities and by The New York Times as "undoubtedly the most beautiful city built by man".
+           <Image className='mt-4 mb-3' src={'https://images.pexels.com/photos/804954/pexels-photo-804954.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'} fluid/>
 
-           <div className='mt-5' style={{fontSize: '20px', fontWeight: 'bold', letterSpacing: '5px'}}>EXPLORE THE HEART OF ROME</div>
+           <div className='mt-5' style={{fontSize: '20px', fontWeight: 'bold', letterSpacing: '5px'}}>ST. MARK'S BASILICA</div>
            <hr  style={{
                color: '#000000',
                height: .5,
                borderColor : '#000000',
                marginTop: '-2px'
             }}/>
-           <div className='mt-2 pr-3'>
-           Spend the afternoon walking through the heart of Rome. This short, easy walk is a great introduction to Rome. On this walk, you will see some of Rome's most famous sites, such as the Spanish Steps, the Trevi Fountain, the Pantheon, and Piazza Navona.
-           This walk is 2 miles long and takes about two hours. You will start at the Spanish Steps and end at Campo de Fiori. Below is a map of the walking route.
-           If you prefer to walk the streets of Rome with a guide, this afternoon walking tour includes the Spanish Steps, the Trevi Fountain, the Pantheon, and Piazza Navona. And this is another highly rated walking tour of the historic center of Rome that includes gelato or coffee.
-           The walking route starts at the Spanish Steps. If you visited the Borghese Gallery, it is a short walk to get here. From the Spanish Steps, you will walk to the Trevi Fountain, the Pantheon, stroll through lovely Piazza Navona, and end in Campo de Fiori. 
-           For dinner, you can eat at one of the restaurants in Piazza Navona or Campo de Fiori. Or, if you are still doing great on time and energy, consider crossing the Tiber River to Trastevere, a neighborhood that is filled with great restaurants. We had a wonderful dinner at Carlo Menta.
+           This cathedral dates back to the 9th century AD. Over the course of eight centuries, mosaics were added to the interior of the cathedral, as well as treasures from the Crusades. 
+           The Pala d'Oro is a Byzantine alter piece that is covered in gold and studded with almost 2,000 gems.
+           Lines can be very long to enter St. Mark's Basilica. Early morning is the best time to visit, when crowds are lower, but you can also skip the lines by taking a tour.
+           <Row>
+             <Col sm={12}>
+               <Image className='mt-4 mb-3' src={'https://images.pexels.com/photos/847366/pexels-photo-847366.jpeg?auto=compress&cs=tinysrgb&w=1600'} fluid/>
+             </Col>
+           </Row>
+
+           <div className='mt-5' style={{fontSize: '20px', fontWeight: 'bold', letterSpacing: '5px'}}>DOGE'S PALACE</div>
+           <hr  style={{
+               color: '#000000',
+               height: .5,
+               borderColor : '#000000',
+               marginTop: '-2px'
+            }}/>
+           <div className=''> 
+              <div><span className='mr-1' style={{fontWeight: 'bold'}}>Hours:</span>10 am to 6 pm, last admission at 5 pm</div>
+              <div><span className='mr-1' style={{fontWeight: 'bold'}}>Cost:</span> €25, audio guide €5</div>
            </div>
-            <Row className='my-3'> 
-              <Col sm={6}>
-               <Image className='mt-3' src={'https://images.pexels.com/photos/2225442/pexels-photo-2225442.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'} fluid/>
-               </Col>
-               <Col sm={6}>
-               <Image className='mt-3' src={'https://images.pexels.com/photos/6765836/pexels-photo-6765836.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'} fluid/>
-               </Col>
-               <Col sm={12}>
-               <Image className='mt-3 mb-3' src={'https://images.pexels.com/photos/791060/pexels-photo-791060.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'} fluid/>
-               </Col>
-            </Row>
+           On this 3-hour walking tour, visit St. Mark's Square, St. Mark's Basilica, and Doge's Palace with skip-the-line access and a knowledgeable guide.
+           The Doges' Palace is a palace built in Venetian Gothic styles. For centuries, this building served as the residence for the Doge, the seat of the government, and a palace of justice. 
+           Now, it is a museum. Again, expect large crowds of people and long ticket lines. You can tour the Palace on your own or book a guided tour.
+           As you tour Doge's Palace, you will cross the Bridge of Sighs. From this window, prisoners on their way to execution would have one final view of the city.
+           <Row>
+             <Col sm={6}>
+               <Image className='mt-4 mb-3' src={'https://images.pexels.com/photos/5784531/pexels-photo-5784531.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'} fluid/>
+             </Col>
+             <Col  className="mt-3" sm={6}>
+               <Image className='mt-4 mb-3' src={'https://images.pexels.com/photos/7231962/pexels-photo-7231962.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'} fluid/>
+               <Image className='mt-4 mb-3' src={'https://images.pexels.com/photos/3790993/pexels-photo-3790993.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'} fluid/>
+             </Col>
+           </Row>
+        
+          
            </Container>
         </Modal.Body>
         

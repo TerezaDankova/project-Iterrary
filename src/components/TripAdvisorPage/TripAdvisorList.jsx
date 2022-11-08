@@ -1,55 +1,31 @@
-import { useState } from "react"
+import { useEffect } from "react"
 import { Col } from "react-bootstrap";
 import TripAdvisorPlaceDetails from "./TripAdvisorPlaceDetails";
-
+import { Image } from "react-bootstrap";
 
 
 
 const TripAdvisorList =  (props) => {
-   const [type, setType] = useState('restaurants');
-   const [rating, setRating] = useState('');
 
+
+   useEffect(() => {
+     console.log(props.selectedPlace)
+   })
+   
 
    return (
   
       <div>
-       
-         {/* <form>
-            <label>Type
-                     <select defaultValue="Choose..." 
-                       value={type} onChange={(e) => setType(e.target.value)}>
-                        <option value="restaurants">
-                           Restaurants
-                        </option>
-                        <option value="hotels">
-                           Hotels
-                        </option>
-                        <option value="attractions">
-                           Attractions
-                        </option>
-                     </select>
-            </label>
-            <br />
-            <label>Rating
-                        <select defaultValue="Choose..." 
-                        value={rating} onChange={(e) => setRating(e.target.value)}>
-                        <option value={0}>
-                           All
-                           </option>
-                           <option value={3}>
-                           Above 3.0
-                           </option>
-                           <option value={4}>
-                              Above 4.0
-                           </option>
-                           <option value={4.5}>
-                              Above 4.5
-                           </option>
-                        </select>
-               </label>
-            </form> */}
-     
+      
             <div style={{ maxHeight: '500px', overflowY: 'scroll' }}>
+            
+            <div className="pl-3" style={{fontSize: '18px', textTransform: 'uppercase', color: 'orange'}}> 
+            <span style={{color: 'black'}}>SELECTED RESTAURANT:</span>
+            <br/>
+             {props.selectedPlace?.name}
+            </div>
+         
+
             {props.places.map((place, i) => (
             <Col md={12} key={i}>
                  <TripAdvisorPlaceDetails place={place} />

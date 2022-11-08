@@ -13,13 +13,19 @@ const ThreeModal4 = (props) => {
         </Modal.Header>
         <Modal.Body>
            <Container className='ml-3 pr-5'>
-            In the morning, check out of your hotel and make your way to the Rome Termini Station.
-            There are several trains per hour that connect Rome to Florence. These range from cheaper, slower, regional trains that might require a connection, to direct, faster trains. Travel times range from one and a half hours up to almost 4 hours.
-            In my opinion, the cost savings aren't worth the longer travel times for the regional trains. Depending on the time of year you will be traveling, it might just be €15 more to take the high-speed Frecciarossa train to Florence.
-            I recommend booking your tickets in advance and choosing a time that gets you into Florence no later than mid-morning.
-            Trains arrive in Florence at the Florence Santa Maria Novella Station. To get to your hotel, you can walk, take the bus, hire a taxi, or use Uber.
+           <div className='mt-3' style={{fontSize: '20px', fontWeight: 'bold', letterSpacing: '5px'}}>TUSCANY</div>
+           <hr  style={{
+               color: '#000000',
+               height: .5,
+               borderColor : '#000000',
+               marginTop: '-2px'
+            }}/>
+            While Tuscany is mostly famous for its gorgeous cities like Pisa, Florence and Siena, the Tuscan countryside is amongst the most beautiful nature spots in Italy.
+            Imagine rolling green hills, yellow wheat fields and country roads lined by picturesque trees. Walking around the Tuscany countryside will feel like stepping into an old movie.
+            In Tuscany you will also find many unique places to stay, like renovated barn houses or medieval towns turned to hotels.
+            You can spend a few days in one of these unique hotels, walking in the nearby fields and then cooling down on poolside as the sun sets over the Tuscan hills.
 
-           <div className='mt-3' style={{fontSize: '20px', fontWeight: 'bold', letterSpacing: '5px'}}>AFTERNOON IN FLORENCE</div>
+            <div className='mt-3' style={{fontSize: '20px', fontWeight: 'bold', letterSpacing: '5px'}}>FLORENCE</div>
            <hr  style={{
                color: '#000000',
                height: .5,
@@ -87,7 +93,7 @@ const ThreeModal4 = (props) => {
                </Col>
             </Row>
 
-           <div className='mt-5' style={{fontSize: '20px', fontWeight: 'bold', letterSpacing: '5px'}}>PONTE VECCHIO & PIAZZALE MICHELANGELO</div>
+           <div className='mt-3' style={{fontSize: '20px', fontWeight: 'bold', letterSpacing: '5px'}}>PONTE VECCHIO & PIAZZALE MICHELANGELO</div>
            <hr  style={{
                color: '#000000',
                height: .5,
@@ -98,8 +104,81 @@ const ThreeModal4 = (props) => {
            The name was given to what was the oldest Florentine bridge when the bridge to the Carraia was built, then called "Ponte Nuovo" in contrast to the pons Vetus. 
            Beyond the historical value, the bridge over time has played a central role in the city road system, starting from when it connected the Roman Florentia with the Via Cassia Nuova commissioned by the emperor Hadrian in 123 AD.
            In the evening, go to Piazzale Michelangelo, the best place to watch the sunset in Florence.
-           <Image className='mt-3 mb-3' src={'https://images.pexels.com/photos/4186549/pexels-photo-4186549.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'} fluid/>
-  
+           <Image className='mt-3 ' src={'https://images.pexels.com/photos/4186549/pexels-photo-4186549.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'} fluid/>
+
+    
+           <div className='mt-3' style={{fontSize: '20px', fontWeight: 'bold', letterSpacing: '5px'}}>ACCADEMIA GALLERY</div>
+           <hr  style={{
+               color: '#000000',
+               height: .5,
+               borderColor : '#000000',
+               marginTop: '-2px'
+            }}/>
+           Start your day at the Accademia Gallery. At this gallery you get to see the statue of David, one of the most famous works of art in the world. This is another place where lines can be legendary so we recommend reserving your ticket in advance or joining a skip-the-line tour.
+           <div className=''> 
+              <div><span className='mr-1' style={{fontWeight: 'bold'}}>Hours:</span> 9:00 am - 6:45 pm; closed Mondays</div>
+              <div><span className='mr-1' style={{fontWeight: 'bold'}}>Cost:</span> €12 + €4 online reservation fee; included on the Firenze Card</div>
+              <div><span className='mr-1' style={{fontWeight: 'bold'}}>Website:</span>  www.accademiagallery.it </div>
+           </div>
+           <Image className='mt-3' src={'https://images.pexels.com/photos/3652853/pexels-photo-3652853.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'} fluid/>
+          
+           <div className='mt-3' style={{fontSize: '20px', fontWeight: 'bold', letterSpacing: '5px'}}>SAN LORENZO MARKET & MERCATO CENTRALE</div>
+           <hr  style={{
+               color: '#000000',
+               height: .5,
+               borderColor : '#000000',
+               marginTop: '-2px'
+            }}/>
+           From Accademia Gallery, walk to San Lorenzo Market (8 minute walk). This outdoor market is a great place to shop for pottery, leather goods, and souvenirs. Then go inside of Mercato Centrale. This is a great place to gather food for a picnic lunch.
+           The Central Market is a two-level food market, making up the second half of the San Lorenzo Market. The Mercato Centrale is in a beautiful building designed by Giuseppe Mengoni, the same architect who designed the Galleria Vittoria Emanuele II, and built from 1870-74 when Florence was still capital of Italy. 
+           <Row>
+             <Col>
+               <Image className='mt-3' src={'https://images.pexels.com/photos/13616781/pexels-photo-13616781.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'} fluid/>
+             </Col>
+             <Col>
+               <Image className='mt-3' src={'https://images.pexels.com/photos/12406725/pexels-photo-12406725.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'} fluid/>
+             </Col>
+           </Row>
+
+           <div className='mt-3' style={{fontSize: '20px', fontWeight: 'bold', letterSpacing: '5px'}}>PALAZZO VECCHIO</div>
+           <hr  style={{
+               color: '#000000',
+               height: .5,
+               borderColor : '#000000',
+               marginTop: '-2px'
+            }}/>
+           Palazzo Vecchio is located in Piazza della Signoria. In this square you can visit the Loggia dei Lanzi, an open-air sculpture gallery of Renaissance art.
+           Stroll through the historic heart of Florence to Palazzo Vecchio (1 km, about 15 minutes).
+           The Palazzo Vecchio is the town hall of Florence. Go inside to tour the museum, take a tour of the Roman Ruins, or, you can do our favorite activity, climb the tower.
+           This is one of my favorite views of Florence. From the top of the tower, enjoy panoramic views over the city. This is one of the best spots to get a great photo of the Duomo.
+           <div className=''> 
+              <div><span className='mr-1' style={{fontWeight: 'bold'}}>Hours:</span> April 1 to September 30: 9 am - 7 pm; October 1 to March 31: 9 am - 7 pm; on Thursdays closing time is 2 pm; last admission is one hour before closing</div>
+              <div><span className='mr-1' style={{fontWeight: 'bold'}}>Cost:</span> Museum €12.50, Tower €12.50, combined €17.50; included on the Firenze Card</div>
+              <div><span className='mr-1' style={{fontWeight: 'bold'}}>Website:</span>  www.accademiagallery.it </div>
+           </div>
+            <Image className='mt-3' src={'https://images.pexels.com/photos/11365684/pexels-photo-11365684.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'} fluid/>
+      
+           <div className='mt-3' style={{fontSize: '20px', fontWeight: 'bold', letterSpacing: '5px'}}>THE UFFIZI MUSEUM</div>
+           <hr  style={{
+               color: '#000000',
+               height: .5,
+               borderColor : '#000000',
+               marginTop: '-2px'
+            }}/>
+           This world famous art museum contains works of art by Renaissance artists Leonardo da Vinci, Botticelli, Michelangelo, and many more.
+           <div className=''> 
+              <div><span className='mr-1' style={{fontWeight: 'bold'}}>Hours:</span> 8:15 am - 6:30 pm; closed Monday</div>
+              <div><span className='mr-1' style={{fontWeight: 'bold'}}>Cost:</span> €20 March 1 to October 31; €12 November 1 to February 28; included on the Firenze Card</div>
+           </div>
+           <Row>
+              <Col sm={6}>
+                <Image className='mt-3' src={'https://www.madeoftuscany.it/image/uffizi/elena-popova-zm2ecmpbr-y-unsplash.jpg'} fluid/>
+              </Col>
+              <Col sm={6}>
+                 <Image className='mt-3 mb-3' src={'https://static01.nyt.com/images/2018/06/10/arts/10uffizi7/10uffizi7-superJumbo.jpg'} fluid/>
+              </Col>
+           </Row>
+
            </Container>
         </Modal.Body>
         

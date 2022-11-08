@@ -2,7 +2,7 @@ import { Container, Row, Image, Col} from 'react-bootstrap';
 import Loader from '../components/Loader';
 import { useState } from 'react';
 
-import Map1 from '../pictures/map1.jpg'
+import Map5 from '../pictures/map5.jpg'
 import './css/Itinerary.css'
 
 
@@ -39,7 +39,7 @@ const Itinerary5 = (props) => {
     <Container>
       {props.loadState && <Loader/>}
       <h1 className="my-3 textMain"> TRIP ITINERARY LIST </h1>
-      <h6 className="textCity">ROME - FLORENCE - CINQUE TERRE - MILAN - VENICE</h6>
+      <h6 className="textCity">GOLFO DI OROSEI - PALAU - STINTINO</h6>
 
 
       <OneModal5 one5Show={one5Show} setOne5Show={setOne5Show}/>
@@ -64,18 +64,18 @@ const Itinerary5 = (props) => {
     <Row>
       <Col sm={8}>
       <div className="mt-5 mb-4" style={{ textAlign: "center" }}>
-        <Image className="mapImage" src={Map1} fluid/>
+        <Image className="mapImage" src={Map5} fluid/>
       </div>
       </Col>
       <Col sm={4}>
       <div className='mt-5'>
-        <div><span className='mr-2 days' onClick={handleOne5Show}>Day 1:</span><span>Arrive in Rome</span></div>
-        <div><span className='mr-2 days' onClick={handleTwo5Show}>Day 2:</span><span>Rome</span></div>
-        <div><span className='mr-2 days' onClick={handleThree5Show}>Day 3:</span><span>Florence</span></div>
-        <div><span className='mr-2 days' onClick={handleFour5Show}>Day 4:</span><span>Florence</span></div>
-        <div><span className='mr-2 days' onClick={handleFive5Show}>Day 5:</span><span>Tuscany day trip</span></div>
-        <div><span className='mr-2 days' onClick={handleSix5Show}>Day 6:</span><span>Pisa</span></div>
-        <div><span className='mr-2 days' onClick={handleSeven5Show}>Day 7:</span><span>Cinque Terre</span></div>
+        <div><span className='mr-2 days' onClick={handleOne5Show}>Day 1:</span><span>Golfo di Orosei</span></div>
+        <div><span className='mr-2 days' onClick={handleTwo5Show}>Day 2:</span><span>Golfo di Orosei</span></div>
+        <div><span className='mr-2 days' onClick={handleThree5Show}>Day 3:</span><span>Palau</span></div>
+        <div><span className='mr-2 days' onClick={handleFour5Show}>Day 4:</span><span>Palau</span></div>
+        <div><span className='mr-2 days' onClick={handleFive5Show}>Day 5:</span><span>Palau</span></div>
+        <div><span className='mr-2 days' onClick={handleSix5Show}>Day 6:</span><span>Stintino</span></div>
+        <div><span className='mr-2 days' onClick={handleSeven5Show}>Day 7:</span><span>Sintino</span></div>
       </div>
       </Col>
       </Row>

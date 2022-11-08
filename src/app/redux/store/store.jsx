@@ -12,7 +12,7 @@ const persistConfig = {
 
 
 export const initialState = {
-   tripAdvisor: { loading: true, places: [] }
+   tripAdvisor: { loading: true, places: [], position: null, selectedPlace: null }
 } 
 
 const bigReducer = combineReducers({

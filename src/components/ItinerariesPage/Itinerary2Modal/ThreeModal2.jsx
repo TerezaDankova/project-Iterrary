@@ -13,93 +13,74 @@ const ThreeModal2 = (props) => {
         </Modal.Header>
         <Modal.Body>
            <Container className='ml-3 pr-5'>
-            In the morning, check out of your hotel and make your way to the Rome Termini Station.
-            There are several trains per hour that connect Rome to Florence. These range from cheaper, slower, regional trains that might require a connection, to direct, faster trains. Travel times range from one and a half hours up to almost 4 hours.
-            In my opinion, the cost savings aren't worth the longer travel times for the regional trains. Depending on the time of year you will be traveling, it might just be €15 more to take the high-speed Frecciarossa train to Florence.
-            I recommend booking your tickets in advance and choosing a time that gets you into Florence no later than mid-morning.
-            Trains arrive in Florence at the Florence Santa Maria Novella Station. To get to your hotel, you can walk, take the bus, hire a taxi, or use Uber.
-
-           <div className='mt-3' style={{fontSize: '20px', fontWeight: 'bold', letterSpacing: '5px'}}>AFTERNOON IN FLORENCE</div>
+     
+           <div className='' style={{fontSize: '20px', fontWeight: 'bold', letterSpacing: '5px'}}>VATICAN CITY</div>
            <hr  style={{
                color: '#000000',
                height: .5,
                borderColor : '#000000',
                marginTop: '-2px'
             }}/>
-            Florence is packed with world class art museums, shopping, and numerous domes and towers to climb for breathtaking views of the city. On this 10 day Italy itinerary, you have this afternoon and tomorrow to visit Florence. Like Rome, it will be a bit of a whirlwind.
-            If you have an extra day or two to add to this itinerary, Florence would be a great place to add it. Doing so gives you the time to either slow down and savor Florence, or spend more time day tripping to the hill towns in Tuscany.
-           <Image className='mt-3' src={'https://images.pexels.com/photos/4179480/pexels-photo-4179480.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'} fluid/>
-          
-           <div className='mt-4' style={{fontSize: '20px', fontWeight: 'bold', letterSpacing: '5px'}}>VISIT THE DUOMO AND CLIMB THE DOME</div>
+           <div className=' pr-3'>
+           Vatican City is the smallest country in the world. There are three big sights to visit here: the Vatican Museums, the Sistine Chapel, and St. Peter's Basilica.
+           The lines to enter the Vatican Museums and the Sistine Chapel are enormous…up to 3 hour waits on the busiest days. Mid-mornings tend to be the busiest time to tour the Vatican. In the afternoon, crowds tend to lessen, at least a little bit. 
+           To avoid the worst of the crowds, the best times to visit Vatican City are first thing in the morning and just before closing time.
+           </div>
+           <Image className='mt-3' src={'https://images.pexels.com/photos/937690/pexels-photo-937690.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'} fluid/>
+         
+           <div className='mt-3' style={{fontSize: '20px', fontWeight: 'bold', letterSpacing: '5px'}}>VISITING THE VATICAN MUSEUMS AND SISTINE CHAPEL</div>
            <hr  style={{
                color: '#000000',
                height: .5,
                borderColor : '#000000',
                marginTop: '-2px'
             }}/>
-        
-           The Duomo, also called Cattedrale di Santa Maria del Fiore, is the centerpiece of Florence. The entire cathedral complex has multiple parts to it: the nave, Brunelleschi's Dome, Giotto's Bell Tower, and the Baptistery. It's a great place to start your tour of Florence.
-           Climbing the 463 steps to the top of dome is one of Florence's best experiences. Along the way you will have marvelous views of the interior of the Duomo. These paintings are the “Last Judgement” frescoes showing heaven and hell. They are very graphic and Tyler and Kara were mesmerized by these, in particular the creepy portrayal of hell.
+           Reserve your tickets for early afternoon (1 pm or 2 pm). Start at the Vatican Museums and then visit Sistine Chapel.
            <div className=''> 
-              <div><span className='mr-1' style={{fontWeight: 'bold'}}>Hours:</span> Monday through Friday 8:15 am to 7:45 pm; Saturday 8:15 am to 5:30 pm; Sunday 12:45 pm to 5:30 pm</div>
-              <div><span className='mr-1' style={{fontWeight: 'bold'}}>Cost:</span> €20</div>
-              <div><span className='mr-1' style={{fontWeight: 'bold'}}>Website:</span>  www.duomoflorence.it </div>
+              <div><span className='mr-2' style={{fontWeight: 'bold'}}>Hours:</span> Monday through Saturday 9 am - 6 pm; last entry at 4 pmClosed Sundays, except the last Sunday of the month (9 am - 2 pm, free)</div>
+              <div><span className='mr-2' style={{fontWeight: 'bold'}}>Cost:</span> €17, €4 online reservation fee</div>
+              <div><span className='mr-2' style={{fontWeight: 'bold'}}>Website:</span> www.biglietteriamusei.vatican.va </div>
+              <div><span className='mr-2' style={{fontWeight: 'bold'}}>Getting Here:</span> To get here, take the metro, line A, to the Ottaviano or Cipro stations.</div>
+              <div><span className='mr-2' style={{fontWeight: 'bold'}}>Dress Code:</span> Men: no shorts. Women: no bare shoulders and no shorts or skirt shorter than knee length.</div>
            </div>
 
-           <div className='mt-3' style={{fontSize: '20px', fontWeight: 'bold', letterSpacing: '5px'}}>VISIT THE BAPTISTERY</div>
+           <div className='mt-5' style={{fontSize: '20px', fontWeight: 'bold', letterSpacing: '5px'}}>ST. PETER'S BASILICA</div>
            <hr  style={{
                color: '#000000',
                height: .5,
                borderColor : '#000000',
                marginTop: '-2px'
             }}/>
-           The Baptistery is one of the oldest buildings in Florence. It stands in Piazza del Duomo across from the Duomo. The giant bronze doors with relief sculptures are the main attraction but go inside to see the beautiful mosaics on the inside of the cupola.
-           <div className=''> 
-              <div><span className='mr-1' style={{fontWeight: 'bold'}}>Hours:</span>Weekdays: 8:15 am - 10:15 am, 11:15 am - 6:30 pm; Saturday 8:15 am - 6:30 pm; Sunday 8:15 am - 1:30 pm</div>
-              <div><span className='mr-1' style={{fontWeight: 'bold'}}>Cost:</span> €5</div>
-              <div><span className='mr-1' style={{fontWeight: 'bold'}}>Website:</span>  www.baptisteryflorence.it </div>
+           <div className='pr-3'>
+            St. Peter's Basilica is the largest church in the world. It is also considered to be the most renowned work of Renaissance architecture.
+            St. Peter's Basilica is a separate visit from the Vatican Museums and the Sistine Chapel. Like the Vatican Museums, lines can be long to enter the Basilica, although they tend to be shorter.
+            To skip the line to enter St. Peter's Basilica, consider taking a tour. This guided tour also includes the dome climb. And this tour includes the dome, a visit to St. Peter's tomb, and a visit to the underground grottoes.
+            To get here from the Vatican Museums, you will have to exit the Vatican Museums and walk 20 minutes to St. Peter's Basilica. There is a short-cut from the Sistine Chapel to St. Peter's Basilica, but this is reserved for tour groups (another great reason to join a tour!).
+            It is free to enter St. Peter's Basilica. However, to climb to the top of the Dome, there is a fee:
+            Climb 551 steps to the top of the dome: €8
+            Take the elevator to the terrace, climb 320 steps to the top: €10
+            Is it worth it? Absolutely. Here is the view from the dome of St. Peter's Basilica.
            </div>
-
-           <div className='mt-3' style={{fontSize: '20px', fontWeight: 'bold', letterSpacing: '5px'}}>ENJOY THE VIEW FROM GIOTTO'S BELL TOWER</div>
-           <hr  style={{
-               color: '#000000',
-               height: .5,
-               borderColor : '#000000',
-               marginTop: '-2px'
-            }}/>
-           Giotto's Bell Tower, also called the Campanile, is the tall tower attached to the Duomo. For an awesome view of Florence, and a chance to look down on the dome, climb the 414 steps to the top.
-           <div className=''> 
-              <div><span className='mr-1' style={{fontWeight: 'bold'}}>Hours:</span>8:15 am - 7:30 pm</div>
-              <div><span className='mr-1' style={{fontWeight: 'bold'}}>Cost:</span> €15</div>
+           <div className='mb-3'> 
+              <div><span className='mr-2' style={{fontWeight: 'bold'}}>Hours of the Basilica:</span> April to September 7 am - 7 pm; October to March 7 am - 6:30 pm</div>
+              <div><span className='mr-2' style={{fontWeight: 'bold'}}>Hours of the Dome:</span> April to September 7:30 am - 6:30 pm; October through March 7:30 am - 5 pm</div>
+              <div><span className='mr-2' style={{fontWeight: 'bold'}}>Cost:</span> Free; €8 - €10 to climb the dome.</div>
+              <div><span className='mr-2' style={{fontWeight: 'bold'}}>Website:</span> www.biglietteriamusei.vatican.va </div>
+              <div><span className='mr-2' style={{fontWeight: 'bold'}}>Getting Here:</span> To get here, take the metro, line A, to the Ottaviano or Cipro stations.</div>
+              <div><span className='mr-2' style={{fontWeight: 'bold'}}>Dress Code:</span> Men: no shorts. Women: no bare shoulders and no shorts or skirt shorter than knee length.</div>
            </div>
-           <Row className=''> 
+           <Row className='my-3'> 
               <Col sm={6}>
-               <Image className='mt-3' src={'https://images.pexels.com/photos/8140617/pexels-photo-8140617.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'} fluid/>
+               <Image className='mt-3' src={'https://images.pexels.com/photos/9869786/pexels-photo-9869786.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'} fluid/>
                </Col>
                <Col sm={6}>
-               <Image className='mt-3' src={'https://images.pexels.com/photos/10385997/pexels-photo-10385997.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'} fluid/>
+               <Image className='mt-3' src={'https://images.pexels.com/photos/4558417/pexels-photo-4558417.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'} fluid/>
                </Col>
-               <Col sm={6}>
-               <Image className='mt-3' src={'https://images.pexels.com/photos/3329203/pexels-photo-3329203.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'} fluid/>
-               </Col>
-               <Col sm={6}>
-               <Image className='mt-3' src={'https://images.pexels.com/photos/4916697/pexels-photo-4916697.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'} fluid/>
+               <Col sm={12}>
+               <Image className='mt-3 mb-3' src={'https://images.pexels.com/photos/7464775/pexels-photo-7464775.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'} fluid/>
                </Col>
             </Row>
 
-           <div className='mt-5' style={{fontSize: '20px', fontWeight: 'bold', letterSpacing: '5px'}}>PONTE VECCHIO & PIAZZALE MICHELANGELO</div>
-           <hr  style={{
-               color: '#000000',
-               height: .5,
-               borderColor : '#000000',
-               marginTop: '-2px'
-            }}/>
-           In the late afternoon, stroll across Ponte Vecchio. This medieval stone bridge spans the Arno River. For centuries, shops have lined the sides of the bridge.
-           The name was given to what was the oldest Florentine bridge when the bridge to the Carraia was built, then called "Ponte Nuovo" in contrast to the pons Vetus. 
-           Beyond the historical value, the bridge over time has played a central role in the city road system, starting from when it connected the Roman Florentia with the Via Cassia Nuova commissioned by the emperor Hadrian in 123 AD.
-           In the evening, go to Piazzale Michelangelo, the best place to watch the sunset in Florence.
-           <Image className='mt-3 mb-3' src={'https://images.pexels.com/photos/4186549/pexels-photo-4186549.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'} fluid/>
-  
            </Container>
         </Modal.Body>
         

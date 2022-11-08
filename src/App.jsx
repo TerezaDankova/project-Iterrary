@@ -17,6 +17,7 @@ import Itinerary6 from './pages/Itinerary6';
 import Itinerary7 from './pages/Itinerary7';
 import Itinerary8 from './pages/Itinerary8';
 
+
 function App() {
   return (
   <>
@@ -38,6 +39,7 @@ function App() {
         <Route path='/accommodationPage' element={<AccommodationPage/>}></Route>
         <Route path='/tripAdvisor' element={<TripAdvisor />}></Route>
     </Routes>
+
   </BrowserRouter>
   </>
   );
