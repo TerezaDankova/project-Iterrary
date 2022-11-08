@@ -24,7 +24,20 @@
    text-align: center;
    color: rgb(255, 255, 254);
    font-weight: bold; 
+   font-size: 50px;
+   letter-spacing: 1px;
  }
+ .main-text-one {
+  text-align: center;
+  color: rgb(255, 255, 254);
+  font-weight: bold; 
+  font-size: 20px;
+}
+ .main-text-two {
+  text-align: center;
+  color:  white;
+  font-size: 16px;
+}
  .button-home {
   width: 300px;
   margin: auto;

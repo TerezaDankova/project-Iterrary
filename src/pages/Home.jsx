@@ -22,16 +22,19 @@ const Home = () => {
                      <h2 className='main-text' style={{textAlign: "center", color: 'white'}}> ARE YOU READY FOR YOUR NEXT ADVENTURE?</h2>
                </Col>
                <Col sm={12}>
-                     <h6 className='main-text'>
+                     <h6 className='main-text-one'>
                         HERE YOU CAN FIND AN INSPIRATION FOR YOUR NEXT TRIP AROUND ITALY!
                      </h6>
+                     <h6 className='main-text-two'>
+                        If you scroll bellow you will find also the best restaurants near to you or in the city you like!
+                     </h6>
                </Col>
-               <Col sm={12}>
-                     <Button className="button-home mt-3"  variant="outline-light"
+  
+                     <Button className="button-home mt-3"  variant="dark"
                         onClick={goToItinerariesPage}
                      > SHOW ITINERARIES 
                      </Button>
-               </Col>
+             
             </Row>
             </div>
              
@@ -40,7 +43,8 @@ const Home = () => {
          <Row className='mt-5 mb-5'>
           <Col sm={6}>
                      <h2 className='food-text'> WHERE CAN YOU EAT LIKE YOU EAT IN ITALY?</h2>
-                     <h6 className='food-text-small pr-5'>Italian cuisine is known around the world for dishes such as pizza and pasta, here you can find a top Italian restaurants.</h6>
+                     <h6 className='food-text-small pr-5'>Italian cuisine is known around the world for dishes such as pizza and pasta, here you can find a top Italian restaurants.
+                     </h6>
                     <Col>
                      <Button className="button-restaurants mt-3" variant="outline-warning"
                         onClick={goToRestaurantsPage}
