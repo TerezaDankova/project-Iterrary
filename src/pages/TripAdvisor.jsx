@@ -1,15 +1,14 @@
 
-import { Container, Row, Col } from "react-bootstrap"
+import { Container, Row, Col, Button } from "react-bootstrap"
 import TripAdvisorHeader from "../components/TripAdvisorPage/TripAdvisorHeader"
 import TripAdvisorList from "../components/TripAdvisorPage/TripAdvisorList"
 import TripAdvisorMap from "../components/TripAdvisorPage/TripAdvisorMap"
-import { useEffect } from "react"
+import { useEffect, useState } from "react"
 import { connect } from "react-redux"
 import { getPlacesInCurrentPosition, selectedPlace } from "../app/redux/actions/actions";
 import { Link } from 'react-router-dom';
 import { useLocation } from 'react-router-dom';
 import * as RiIcons from "react-icons/ri";
-
 
 const mapStateToProps = state => {
    return state.tripAdvisor
@@ -27,6 +26,9 @@ const mapDispatchToProps = dispatch => {
 }
 
 const TripAdvisor = (props) => {
+
+
+
    useEffect(() => {
       props.getPlaces();
    }, [])

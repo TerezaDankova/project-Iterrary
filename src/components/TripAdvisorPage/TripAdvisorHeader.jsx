@@ -17,6 +17,7 @@ const TripAdvisorHeader = ({getPlacesForCity}) => {
   
 
    const handleInputChange = (e) => {
+      
       setCity( e.target.value )
       console.log(e.target.value)
    }
@@ -29,7 +30,6 @@ const TripAdvisorHeader = ({getPlacesForCity}) => {
    return (
       <Container>
          <div >
-         
             <div>
                <h6> Where?
                </h6>
