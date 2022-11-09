@@ -13,6 +13,9 @@ import NineModal from '../components/ItinerariesPage/Itinerary1Modal/NineModal';
 import TenModal from '../components/ItinerariesPage/Itinerary1Modal/TenModal';
 import Map1 from '../pictures/map1.jpg'
 import './css/Itinerary.css'
+import { Link } from 'react-router-dom';
+import { useLocation } from 'react-router-dom';
+import * as RiIcons from "react-icons/ri";
 
 
 const Itinerary = (props) => {
@@ -37,6 +40,9 @@ const Itinerary = (props) => {
   const handleNineShow = () => setNineShow(true);
   const [tenShow, setTenShow] = useState(false);
   const handleTenShow = () => setTenShow(true);
+
+  const location = useLocation(); 
+  console.log("LOCATION pathname", location.pathname);
 
   return (
     <>
@@ -89,6 +95,12 @@ const Itinerary = (props) => {
         <div><span className='mr-2 days' onClick={handleEightShow}>Day 8:</span><span>Milan</span></div>
         <div><span className='mr-2 days' onClick={handleNineShow}>Day 9:</span><span>Venice</span></div>
         <div><span className='mr-2 days' onClick={handleTenShow}>Day 10:</span><span>Fly home</span></div>
+      </div>
+      <div className='box-link'>
+        <Link to="/itineraries"
+                    className={location.pathname === "/itineraries" ? "nav-link-it active" : "nav-link-it"}
+              > GO BACK <RiIcons.RiArrowGoBackFill className='mb-1' size={20}/>
+        </Link>
       </div>
       </Col>
       </Row>

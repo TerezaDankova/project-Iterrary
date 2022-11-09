@@ -1,10 +1,8 @@
 import { Container, Row, Image, Col} from 'react-bootstrap';
 import Loader from '../components/Loader';
 import { useState } from 'react';
-
 import Map7 from '../pictures/map7.jpg'
 import './css/Itinerary.css'
-
 import OneModal7 from '../components/ItinerariesPage/Itinerary7Modal/OneModal7';
 import TwoModal7 from '../components/ItinerariesPage/Itinerary7Modal/TwoModal7';
 import ThreeModal7 from '../components/ItinerariesPage/Itinerary7Modal/ThreeModal7';
@@ -12,6 +10,9 @@ import FourModal7 from '../components/ItinerariesPage/Itinerary7Modal/FourModal7
 import FiveModal7 from '../components/ItinerariesPage/Itinerary7Modal/FiveModal7';
 import SixModal7 from '../components/ItinerariesPage/Itinerary7Modal/SixModal7';
 import SevenModal7 from '../components/ItinerariesPage/Itinerary7Modal/SevenModal7';
+import { Link } from 'react-router-dom';
+import { useLocation } from 'react-router-dom';
+import * as RiIcons from "react-icons/ri";
 
 
 const Itinerary7 = (props) => {
@@ -31,6 +32,8 @@ const Itinerary7 = (props) => {
   const [seven7Show, setSeven7Show] = useState(false);
   const handleSeven7Show = () => setSeven7Show(true);
 
+  const location = useLocation(); 
+  console.log("LOCATION pathname", location.pathname);
 
   return (
     <>
@@ -75,6 +78,12 @@ const Itinerary7 = (props) => {
         <div><span className='mr-2 days' onClick={handleFive7Show}>Day 5:</span><span>Modica & Scicli & Ragusa Ibla</span></div>
         <div><span className='mr-2 days' onClick={handleSix7Show}>Day 6:</span><span>Ragusa Ibla & Caltagirone & Catania</span></div>
         <div><span className='mr-2 days' onClick={handleSeven7Show}>Day 7:</span><span>Aci Castello & Acireale</span></div>
+      </div>
+      <div className='box-link2'>
+        <Link to="/itineraries"
+                    className={location.pathname === "/itineraries" ? "nav-link-it active" : "nav-link-it"}
+              > GO BACK <RiIcons.RiArrowGoBackFill className='mb-1' size={20}/>
+        </Link>
       </div>
       </Col>
       </Row>

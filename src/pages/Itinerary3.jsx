@@ -14,7 +14,9 @@ import SevenModal3 from '../components/ItinerariesPage/Itinerary3Modal/SevenModa
 import EightModal3 from '../components/ItinerariesPage/Itinerary3Modal/EightModal3';
 import NineModal3 from '../components/ItinerariesPage/Itinerary3Modal/NineModal3';
 import TenModal3 from '../components/ItinerariesPage/Itinerary3Modal/TenModal3';
-
+import { Link } from 'react-router-dom';
+import { useLocation } from 'react-router-dom';
+import * as RiIcons from "react-icons/ri";
 
 const Itinerary3 = (props) => {
 
@@ -38,6 +40,9 @@ const Itinerary3 = (props) => {
   const handleNine3Show = () => setNine3Show(true);
   const [ten3Show, setTen3Show] = useState(false);
   const handleTen3Show = () => setTen3Show(true);
+
+  const location = useLocation(); 
+  console.log("LOCATION pathname", location.pathname);
 
   return (
     <>
@@ -90,6 +95,12 @@ const Itinerary3 = (props) => {
         <div><span className='mr-2 days' onClick={handleEight3Show}>Day 8:</span><span>Tuscany</span></div>
         <div><span className='mr-2 days' onClick={handleNine3Show}>Day 9:</span><span>Tuscany</span></div>
         <div><span className='mr-2 days' onClick={handleTen3Show}>Day 10:</span><span>Fly home</span></div>
+      </div>
+      <div className='box-link'>
+        <Link to="/itineraries"
+                    className={location.pathname === "/itineraries" ? "nav-link-it active" : "nav-link-it"}
+              > GO BACK <RiIcons.RiArrowGoBackFill className='mb-1' size={20}/>
+        </Link>
       </div>
       </Col>
       </Row>

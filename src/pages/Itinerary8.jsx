@@ -1,10 +1,8 @@
 import { Container, Row, Image, Col} from 'react-bootstrap';
 import Loader from '../components/Loader';
 import { useState } from 'react';
-
 import Map8 from '../pictures/map8.jpg'
 import './css/Itinerary.css'
-
 import OneModal8 from '../components/ItinerariesPage/Itinerary8Modal/OneModal8';
 import TwoModal8 from '../components/ItinerariesPage/Itinerary8Modal/TwoModal8';
 import ThreeModal8 from '../components/ItinerariesPage/Itinerary8Modal/ThreeModal8';
@@ -12,6 +10,9 @@ import FourModal8 from '../components/ItinerariesPage/Itinerary8Modal/FourModal8
 import FiveModal8 from '../components/ItinerariesPage/Itinerary8Modal/FiveModal8';
 import SixModal8 from '../components/ItinerariesPage/Itinerary8Modal/SixModal8';
 import SevenModal8 from '../components/ItinerariesPage/Itinerary8Modal/SevenModal8';
+import { Link } from 'react-router-dom';
+import { useLocation } from 'react-router-dom';
+import * as RiIcons from "react-icons/ri";
 
 
 const Itinerary8 = (props) => {
@@ -31,6 +32,8 @@ const Itinerary8 = (props) => {
   const [seven8Show, setSeven8Show] = useState(false);
   const handleSeven8Show = () => setSeven8Show(true);
 
+  const location = useLocation(); 
+  console.log("LOCATION pathname", location.pathname);
 
   return (
     <>
@@ -75,6 +78,12 @@ const Itinerary8 = (props) => {
         <div><span className='mr-2 days' onClick={handleFive8Show}>Day 5:</span><span>Alghero</span></div>
         <div><span className='mr-2 days' onClick={handleSix8Show}>Day 6:</span><span>Alghero</span></div>
         <div><span className='mr-2 days' onClick={handleSeven8Show}>Day 7:</span><span>Alghero</span></div>
+      </div>
+      <div className='box-link2'>
+        <Link to="/itineraries"
+                    className={location.pathname === "/itineraries" ? "nav-link-it active" : "nav-link-it"}
+              > GO BACK <RiIcons.RiArrowGoBackFill className='mb-1' size={20}/>
+        </Link>
       </div>
       </Col>
       </Row>

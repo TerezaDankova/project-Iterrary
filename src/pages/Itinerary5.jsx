@@ -1,11 +1,8 @@
 import { Container, Row, Image, Col} from 'react-bootstrap';
 import Loader from '../components/Loader';
 import { useState } from 'react';
-
 import Map5 from '../pictures/map5.jpg'
 import './css/Itinerary.css'
-
-
 import OneModal5 from '../components/ItinerariesPage/Itinerary5Modal/OneModal5';
 import TwoModal5 from '../components/ItinerariesPage/Itinerary5Modal/TwoModal5';
 import ThreeModal5 from '../components/ItinerariesPage/Itinerary5Modal/ThreeModal5';
@@ -13,7 +10,9 @@ import FourModal5 from '../components/ItinerariesPage/Itinerary5Modal/FourModal5
 import SixModal5 from '../components/ItinerariesPage/Itinerary5Modal/SixModal5';
 import SevenModal5 from '../components/ItinerariesPage/Itinerary5Modal/SevenModal5';
 import FiveModal5 from '../components/ItinerariesPage/Itinerary5Modal/FiveModal5';
-
+import { Link } from 'react-router-dom';
+import { useLocation } from 'react-router-dom';
+import * as RiIcons from "react-icons/ri";
 
 const Itinerary5 = (props) => {
 
@@ -32,6 +31,8 @@ const Itinerary5 = (props) => {
   const [seven5Show, setSeven5Show] = useState(false);
   const handleSeven5Show = () => setSeven5Show(true);
 
+  const location = useLocation(); 
+  console.log("LOCATION pathname", location.pathname);
 
   return (
     <>
@@ -76,6 +77,12 @@ const Itinerary5 = (props) => {
         <div><span className='mr-2 days' onClick={handleFive5Show}>Day 5:</span><span>Palau</span></div>
         <div><span className='mr-2 days' onClick={handleSix5Show}>Day 6:</span><span>Stintino</span></div>
         <div><span className='mr-2 days' onClick={handleSeven5Show}>Day 7:</span><span>Sintino</span></div>
+      </div>
+      <div className='box-link2'>
+        <Link to="/itineraries"
+                    className={location.pathname === "/itineraries" ? "nav-link-it active" : "nav-link-it"}
+              > GO BACK <RiIcons.RiArrowGoBackFill className='mb-1' size={20}/>
+        </Link>
       </div>
       </Col>
       </Row>

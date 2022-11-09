@@ -12,7 +12,9 @@ import FourModal6 from '../components/ItinerariesPage/Itinerary6Modal/FourModal6
 import FiveModal6 from '../components/ItinerariesPage/Itinerary6Modal/FiveModal6';
 import SixModal6 from '../components/ItinerariesPage/Itinerary6Modal/SixModal6';
 import SevenModal6 from '../components/ItinerariesPage/Itinerary6Modal/SevenModal6';
-
+import { Link } from 'react-router-dom';
+import { useLocation } from 'react-router-dom';
+import * as RiIcons from "react-icons/ri";
 
 const Itinerary6 = (props) => {
 
@@ -31,6 +33,8 @@ const Itinerary6 = (props) => {
   const [seven6Show, setSeven6Show] = useState(false);
   const handleSeven6Show = () => setSeven6Show(true);
 
+  const location = useLocation(); 
+  console.log("LOCATION pathname", location.pathname);
 
   return (
     <>
@@ -75,6 +79,12 @@ const Itinerary6 = (props) => {
         <div><span className='mr-2 days' onClick={handleFive6Show}>Day 5:</span><span>Naples & Amalfi Coast</span></div>
         <div><span className='mr-2 days' onClick={handleSix6Show}>Day 6:</span><span>Matera</span></div>
         <div><span className='mr-2 days' onClick={handleSeven6Show}>Day 7:</span><span>Matera</span></div>
+      </div>
+      <div className='box-link2'>
+        <Link to="/itineraries"
+                    className={location.pathname === "/itineraries" ? "nav-link-it active" : "nav-link-it"}
+              > GO BACK <RiIcons.RiArrowGoBackFill className='mb-1' size={20}/>
+        </Link>
       </div>
       </Col>
       </Row>

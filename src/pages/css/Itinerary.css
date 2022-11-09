@@ -40,3 +40,29 @@
    border-radius: 10px;
    color: white;
 }
+
+.nav-link.active-it {
+   border: 3px solid rgba(250, 249, 249, 0.27);
+   color: rgb(36, 36, 36);
+   font-weight: bold;
+   background-color: rgba(255, 255, 255, 0.853); 
+   border-radius: 10px;
+ }
+ .nav-link-it {
+   color: rgb(0, 0, 0);
+ }
+ .nav-link-it:hover {
+   color: rgb(33, 93, 46);
+   font-weight: bold;
+ }
+ .box-link {
+    text-align: right;
+    margin-top: 200px;
+ }
+ .box-link2 {
+   text-align: right;
+   margin-top: 280px;
+}
+.box-link-rest {
+   text-align: right;
+}

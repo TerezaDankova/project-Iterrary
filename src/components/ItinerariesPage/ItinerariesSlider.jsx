@@ -71,7 +71,7 @@ const ItinerariesSlider = () => {
       }}
       >
          <SwiperSlide>
-            <Card className='card'>
+            <Card className='card-size'>
                <Card.Img className="card-image" variant='top' 
                src={'https://images.pexels.com/photos/4846247/pexels-photo-4846247.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260'}  onClick={goToItinerary1Page} />
                      <Card.Title className='card-title' style={{top: '30%'}}>
@@ -91,7 +91,7 @@ const ItinerariesSlider = () => {
             </Card>
          </SwiperSlide>
          <SwiperSlide>
-            <Card className='card'>
+            <Card className='card-size'>
                <Card.Img className="card-image" variant='top' 
                src={'https://images.pexels.com/photos/572780/pexels-photo-572780.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'}  onClick={goToItinerary2Page}/>
                       <Card.Title className='card-title' style={{top: '35%'}}>
@@ -110,7 +110,7 @@ const ItinerariesSlider = () => {
             </Card>  
          </SwiperSlide>
          <SwiperSlide> 
-            <Card className='card'>
+            <Card className='card-size'>
                <Card.Img className="card-image" variant='top' 
                src={'https://images.pexels.com/photos/9148687/pexels-photo-9148687.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500'} onClick={goToItinerary3Page} />
                      <Card.Title className='card-title' style={{top: '30%'}}>
@@ -131,7 +131,7 @@ const ItinerariesSlider = () => {
             </Card>  
          </SwiperSlide>
          <SwiperSlide>     
-            <Card className='card'>
+            <Card className='card-size'>
                <Card.Img className="card-image" variant='top' 
                src={'https://images.pexels.com/photos/13567852/pexels-photo-13567852.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260'}  onClick={goToItinerary4Page} />
                      <Card.Title className='card-title' style={{top: '35%'}}>
@@ -151,7 +151,7 @@ const ItinerariesSlider = () => {
             </Card>  
          </SwiperSlide>
          <SwiperSlide>       
-            <Card className='card'>
+            <Card className='card-size'>
                <Card.Img className="card-image" variant='top' 
                src={'https://images.pexels.com/photos/1615677/pexels-photo-1615677.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260'}  onClick={goToItinerary5Page}/>
                      <Card.Title className='card-title' style={{top: '30%'}}>
@@ -170,7 +170,7 @@ const ItinerariesSlider = () => {
             </Card>  
          </SwiperSlide>
          <SwiperSlide>          
-            <Card className='card'>
+            <Card className='card-size'>
                <Card.Img className="card-image" variant='top' 
                src={'https://images.pexels.com/photos/9869786/pexels-photo-9869786.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260'} onClick={goToItinerary6Page} />
                      <Card.Title className='card-title' style={{top: '30%'}}>
@@ -190,7 +190,7 @@ const ItinerariesSlider = () => {
             </Card>  
          </SwiperSlide>
          <SwiperSlide>    
-            <Card className='card'>
+            <Card className='card-size'>
                <Card.Img className="card-image" variant='top' 
                src={'https://images.pexels.com/photos/10906342/pexels-photo-10906342.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'} onClick={goToItinerary7Page}/>
                      <Card.Title className='card-title' style={{top: '30%'}}>
@@ -210,7 +210,7 @@ const ItinerariesSlider = () => {
             </Card>  
          </SwiperSlide>
          <SwiperSlide>   
-            <Card className='card'>
+            <Card className='card-size'>
                <Card.Img className="card-image" variant='top' 
                src={'https://images.pexels.com/photos/6694379/pexels-photo-6694379.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'} onClick={goToItinerary8Page}/>
                      <Card.Title className='card-title' style={{top: '35%'}}>
