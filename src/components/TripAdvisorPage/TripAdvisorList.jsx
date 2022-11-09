@@ -21,7 +21,8 @@ const TripAdvisorList =  (props) => {
             <div className="pl-3" style={{fontSize: '18px', textTransform: 'uppercase', color: 'orange'}}> 
             <span style={{color: 'black'}}>SELECTED RESTAURANT:</span>
             <br/>
-             <div>{props.selectedPlace?.name}</div>
+             <div className="">
+               {props.selectedPlace?.name}</div>
              
             </div>
          
