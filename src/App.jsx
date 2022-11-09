@@ -5,9 +5,6 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import Home from './pages/Home';
 import Itineraries from './pages/Itineraries';
 import Itinerary1 from './pages/Itinerary1';
-import City from './pages/City';
-import Accommodation from './pages/Accommodations';
-import AccommodationPage from './pages/AccommodationPage';
 import TripAdvisor from './pages/TripAdvisor';
 import Itinerary2 from './pages/Itinerary2';
 import Itinerary3 from './pages/Itinerary3';
@@ -35,9 +32,6 @@ function App() {
         <Route path='/itinerary6' element={<Itinerary6 />}/>
         <Route path='/itinerary7' element={<Itinerary7 />}/>
         <Route path='/itinerary8' element={<Itinerary8 />}/>
-        <Route path='/city' element={<City />}></Route>
-        <Route path='/accommodation' element={<Accommodation />}></Route>
-        <Route path='/accommodationPage' element={<AccommodationPage/>}></Route>
         <Route path='/tripAdvisor' element={<TripAdvisor />}></Route>
     </Routes>
       <Footer />

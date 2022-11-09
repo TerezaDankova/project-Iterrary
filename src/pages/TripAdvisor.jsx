@@ -1,9 +1,9 @@
-
-import { Container, Row, Col, Button } from "react-bootstrap"
+/* eslint-disable react-hooks/exhaustive-deps */
+import { Container, Row, Col } from "react-bootstrap"
 import TripAdvisorHeader from "../components/TripAdvisorPage/TripAdvisorHeader"
 import TripAdvisorList from "../components/TripAdvisorPage/TripAdvisorList"
 import TripAdvisorMap from "../components/TripAdvisorPage/TripAdvisorMap"
-import { useEffect, useState } from "react"
+import { useEffect } from "react"
 import { connect } from "react-redux"
 import { getPlacesInCurrentPosition, selectedPlace } from "../app/redux/actions/actions";
 import { Link } from 'react-router-dom';
@@ -26,8 +26,6 @@ const mapDispatchToProps = dispatch => {
 }
 
 const TripAdvisor = (props) => {
-
-
 
    useEffect(() => {
       props.getPlaces();

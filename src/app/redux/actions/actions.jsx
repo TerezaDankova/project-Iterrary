@@ -1,5 +1,3 @@
-import { Zoom } from "swiper";
-
 export const LOADING = " LOADING";
 export const SET_PLACES = 'SET_PLACES'
 export const FETCHED_PLACES = 'FETCHED_PLACES'
@@ -105,13 +103,6 @@ const getRestaurantsFromCoordinates = async (coordinates) => {
       .catch(err => console.error(err));
 }
 
-
-// export const setSelectedPlace = (place) => {
-//    return async (dispatch) => {
-//       dispatch(selectedPlace(place))
-//    }
-// } 
-
 export const getPlacesForCity = (cityName) => {
    return async (dispatch) => {
       console.log("Searching: " + cityName)
@@ -150,7 +141,6 @@ export const getPlacesInCurrentPosition = () => {
       }
    }
 }
-
 
 function getPosition() {
    return new Promise((resolve, reject) => 
