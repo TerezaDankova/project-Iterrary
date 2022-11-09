@@ -17,40 +17,36 @@ const Home = () => {
  return ( <>
          <Container className='home' fluid>
             <div className='box'>
-            <Row className='mx-5 mb-5 '>
+            <Row className='m-5'>
                <Col sm={12}>
                      <h2 className='main-text' style={{textAlign: "center", color: 'white'}}> ARE YOU READY FOR YOUR NEXT ADVENTURE?</h2>
                </Col>
                <Col sm={12}>
                      <h6 className='main-text-one'>
-                        HERE YOU CAN FIND AN INSPIRATION FOR YOUR NEXT TRIP AROUND ITALY!
+                        HERE YOU CAN FIND AN INSPIRATION 
+                        FOR YOUR NEXT TRIP AROUND ITALY!
                      </h6>
                      <h6 className='main-text-two'>
                         If you scroll bellow you will find also the best restaurants near to you or in the city you like!
                      </h6>
                </Col>
-  
-                     <Button className="button-home mt-3"  variant="dark"
-                        onClick={goToItinerariesPage}
-                     > SHOW ITINERARIES 
-                     </Button>
-             
+               <Button className="button-home"  variant="dark"
+                        onClick={goToItinerariesPage}> 
+                        SHOW ITINERARIES 
+               </Button>
             </Row>
-            </div>
-             
+            </div>    
          </Container>
          <Container>
-         <Row className='mt-5 mb-5'>
+         <Row className='mt-5 mb-5' style={{alignItems: 'center', flex: 1, justifyContent: 'center'}}>
           <Col sm={6}>
                      <h2 className='food-text'> WHERE CAN YOU EAT LIKE YOU EAT IN ITALY?</h2>
-                     <h6 className='food-text-small pr-5'>Italian cuisine is known around the world for dishes such as pizza and pasta, here you can find a top Italian restaurants.
+                     <h6 className='food-text-small'>Italian cuisine is known around the world for dishes such as pizza and pasta, here you can find a top Italian restaurants.
                      </h6>
-                    <Col>
                      <Button className="button-restaurants mt-3" variant="outline-warning"
-                        onClick={goToRestaurantsPage}
-                     > SHOW RESTAURANTS
-                     </Button>
-                     </Col>
+                     onClick={goToRestaurantsPage}> 
+                     SHOW RESTAURANTS
+                     </Button>       
           </Col>
           <Col sm={6}>
                <Image className='mt-4 mb-3' src={'https://images.pexels.com/photos/2233348/pexels-photo-2233348.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260'} fluid/>
@@ -64,7 +60,7 @@ const Home = () => {
          <Col sm={12}>
                <Image className='mt-4 mb-3' src={'https://images.pexels.com/photos/4819658/pexels-photo-4819658.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260'} fluid/>
          </Col>
-         <Col sm={12} className='mt-3 mb-3'>
+         <Col sm={12} className='mt-3'>
             <div className='box-foody'>
             <h6 className='text-pasta my-5 px-5'>Why is Italian food the best? Because there really is something for every taste. Italy is a country much smaller than many others, but the gastronomic heritage it has to offer is so vast as to be envied by the rest of the world. And it is not difficult to understand how. 
             From north to south of the boot there are flavors and foods with ingredients of all kinds. What other country can boast such a variety of food, which includes Milanese cutlet, Parmigiano Reggiano, Fiorentina, Parma ham, ice cream, arancini…? Not to mention a good extra virgin olive oil, which to us seems so common but it isn't so common at all.
@@ -73,8 +69,13 @@ const Home = () => {
          </Col>
          </Row>
          <Row>
-               <Image className='mb-5' src={'https://images.pexels.com/photos/7464775/pexels-photo-7464775.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'} fluid/>
-         </Row>
+               <Col sm={6}>
+                  <Image className='' src={'https://images.pexels.com/photos/5074420/pexels-photo-5074420.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'} fluid/>
+               </Col>
+               <Col sm={6}>
+                  <Image className='mb-5' src={'https://images.pexels.com/photos/6109661/pexels-photo-6109661.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260'} fluid/>
+               </Col>
+            </Row>
          </Container>
          </>
  )

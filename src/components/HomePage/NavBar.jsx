@@ -36,7 +36,7 @@ function NavBar (){
         <Nav.Link className="nav-menu-items" onClick={showSidebar} >
           <Nav.Link className="nav-toggle">
             <Link href="#" className="menu-bar-two mr-2">
-              <AiIcons.AiOutlineClose />
+              <AiIcons.AiOutlineClose size={20} style={{color: 'white'}} />
             </Link>
           </Nav.Link>
           <Nav.Link>
@@ -49,11 +49,9 @@ function NavBar (){
                <Link to="/tripAdvisor"
                     className={location.pathname === "/tripAdvisor" ? "nav-link active" : "nav-link"}
               > RESTAURANTS</Link>
-
           </Nav.Link>
         </Nav.Link>
       </Nav>
-     
       </IconContext.Provider>
       </div>
    )

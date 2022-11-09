@@ -14,6 +14,7 @@ const mapDispatchToProps = dispatch => {
 
 const TripAdvisorHeader = ({getPlacesForCity}) => {
    const [city, setCity] = useState("")
+  
 
    const handleInputChange = (e) => {
       setCity( e.target.value )
@@ -28,8 +29,9 @@ const TripAdvisorHeader = ({getPlacesForCity}) => {
    return (
       <Container>
          <div >
+         
             <div>
-               <h6> Here you can find some nice restaurants:
+               <h6> Where?
                </h6>
                   <form onSubmit={onSubmit} >
                      <InputGroup className="mb-3">

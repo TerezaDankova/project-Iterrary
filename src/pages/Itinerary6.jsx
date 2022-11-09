@@ -38,7 +38,7 @@ const Itinerary6 = (props) => {
     <Container>
       {props.loadState && <Loader/>}
       <h1 className="my-3 textMain"> TRIP ITINERARY LIST </h1>
-      <h6 className="textCityOrange">ROME - NAPLES - AMALFI COAST - MATERA</h6>
+      <h6 className="textCity">ROME - NAPLES - AMALFI COAST - MATERA</h6>
 
 
       <OneModal6 one6Show={one6Show} setOne6Show={setOne6Show}/>
@@ -52,13 +52,13 @@ const Itinerary6 = (props) => {
 
 
     <Row className='mt-3 mb-3 flex-grow-1 d-flex justify-content-center'>
-      <span className="mr-3 btnOrange" onClick={handleOne6Show} >Day 1</span>
-      <span className="mr-3 btnOrange" onClick={handleTwo6Show} >Day 2</span>
-      <span className="mr-3 btnOrange" onClick={handleThree6Show} >Day 3</span>
-      <span className="mr-3 btnOrange" onClick={handleFour6Show} >Day 4</span>
-      <span className="mr-3 btnOrange" onClick={handleFive6Show} >Day 5</span>
-      <span className="mr-3 btnOrange" onClick={handleSix6Show} >Day 6</span>
-      <span className="mr-3 btnOrange" onClick={handleSeven6Show} >Day 7</span>
+      <span className="mr-3 btnGreen" onClick={handleOne6Show} >Day 1</span>
+      <span className="mr-3 btnGreen" onClick={handleTwo6Show} >Day 2</span>
+      <span className="mr-3 btnGreen" onClick={handleThree6Show} >Day 3</span>
+      <span className="mr-3 btnGreen" onClick={handleFour6Show} >Day 4</span>
+      <span className="mr-3 btnGreen" onClick={handleFive6Show} >Day 5</span>
+      <span className="mr-3 btnGreen" onClick={handleSix6Show} >Day 6</span>
+      <span className="mr-3 btnGreen" onClick={handleSeven6Show} >Day 7</span>
     </Row>
     <Row>
       <Col sm={8}>
@@ -67,7 +67,7 @@ const Itinerary6 = (props) => {
       </div>
       </Col>
       <Col sm={4}>
-      <div className='mt-5'>
+      <div className='mt-5 box-days p-4'>
         <div><span className='mr-2 days' onClick={handleOne6Show}>Day 1:</span><span>Rome</span></div>
         <div><span className='mr-2 days' onClick={handleTwo6Show}>Day 2:</span><span>Rome</span></div>
         <div><span className='mr-2 days' onClick={handleThree6Show}>Day 3:</span><span>Naples & Amalfi Coast</span></div>

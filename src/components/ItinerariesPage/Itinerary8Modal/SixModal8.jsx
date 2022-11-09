@@ -14,33 +14,21 @@ const SixModal8 = (props) => {
         <Modal.Body>
            <Container className='ml-3 pr-5'>
   
-           In the morning, travel by train from Florence to the Cinque Terre. From Florence, it takes between an hour and a half and three hours to get to the Cinque Terre. The train arrives in La Spezia or Monterosso, where you will then get on the local train that links all five towns of the Cinque Terre.
-           The Cinque Terre is a UNESCO World Heritage Site and one of Italy's most photogenic destinations. Five colorful towns are perched on the dramatic coastline of Italy. Each town offers something a little bit different than the others, and part of the fun of visiting the Cinque Terre is picking your favorite one.
-           Once in the Cinque Terre, check into your hotel. Spend the rest of the day exploring the town where you are staying. For a great sunset spot, visit Riomaggiore and walk down to the waterfront.
-     
-           <div className='mt-5' style={{fontSize: '20px', fontWeight: 'bold', letterSpacing: '5px'}}>PISA</div>
+           <div className='mt-5' style={{fontSize: '20px', fontWeight: 'bold', letterSpacing: '5px'}}>LACONI</div>
            <hr  style={{
                color: '#000000',
                height: .5,
                borderColor : '#000000',
                marginTop: '-2px'
             }}/>
-           If you want to see the Leaning Tower of Pisa, it is easy to add on to today's itinerary. Take the train from Florence to Pisa, store your luggage in the luggage storage center in the Pisa train station, and spend a few hours visiting Pisa. 
-           The city is also home to the University of Pisa, which has a history going back to the 12th century, the Scuola Normale Superiore di Pisa, founded by Napoleon in 1810, and its offshoot, the Sant'Anna School of Advanced Studies.
-           The tower began to lean during construction in the 12th century, due to soft ground which could not properly support the structure's weight. It worsened through the completion of construction in the 14th century. By 1990, the tilt had reached 5.5 degrees.
-            The structure was stabilized by remedial work between 1993 and 2001, which reduced the tilt to 3.97 degrees.
-           Retrieve your luggage and then take a second train to the Cinque Terre.
-            <Row>
-             <Col sm={12}>
+              Sadly, after spending some nice time in Alghero, you will have to drive back towards Cagliari. Despite the road being longer, it’s actually faster if you go back to Sassari and follow State Road SS 131. Choosing the shorter road will surely grant you some mountain views, but the reduced number of kilometers makes for a larger amount of driving time since you’d be going through the island’s hinterland.
+
                <Image className='mt-3 mb-3' src={'https://images.pexels.com/photos/4388287/pexels-photo-4388287.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'} fluid/>
-             </Col>
-             <Col sm={6}>
-               <Image className='mt-3 mb-3' src={'https://images.pexels.com/photos/4846210/pexels-photo-4846210.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'} fluid/>
-             </Col>
-             <Col sm={6}>
-               <Image className='mt-3 mb-3' src={'https://images.pexels.com/photos/4846522/pexels-photo-4846522.jpeg?auto=compress&cs=tinysrgb&w=1600'} fluid/>
-             </Col>
-           </Row>
+     
+              You can definitely head directly to Cagliari, but I recommend making a stop midway, in Laconi, for the night. There are actually quite a few sites to visit along the way too. Fordongianus, with its Roman thermal bats (they still work and are a SPA location!) is a great option, or you can choose to see another excellently preserved Nuraghe, the Santu Antine one. If you leave nice and early, you can be in Laconi by lunch time and have the entire afternoon to explore.
+              Don’t miss Aymerich Park, a botanical garden designed by one of the local noblemen some centuries ago and filled with all kinds of plants, and the castle – owned by the same Aymerich family, it’s now in ruins but there’s still something interesting left to see.
+              There is also an interesting walking route to follow in the village, based on the patron Saint, Sant’Ignazio. You can visit its house, the church where he went to pray to every day, and the museum that was curated in his honor. Moreover, you can join some wine and truffle tasting tours. There really is something for anybody, despite the village being so small!
+              If you happen to have time to spare, you can also hike to Sa Stiddiosa waterfall the day after – it’s beautiful! If your flight schedule is too tight, the only thing left to do is drive back to Cagliari, putting an end to this complete Sardinia itinerary.
 
            </Container>
         </Modal.Body>

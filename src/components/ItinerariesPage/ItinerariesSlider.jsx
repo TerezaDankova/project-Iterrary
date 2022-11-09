@@ -75,17 +75,17 @@ const ItinerariesSlider = () => {
                <Card.Img className="card-image" variant='top' 
                src={'https://images.pexels.com/photos/4846247/pexels-photo-4846247.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260'}  onClick={goToItinerary1Page} />
                      <Card.Title className='card-title' style={{top: '30%'}}>
-                        <div> ROME </div>
-                        <div> CINQUE TERRE </div>
-                        <div> MILAN </div>
-                        <div> VENICE </div>
+                           <div> ROME </div>
+                           <div> CINQUE TERRE </div>
+                           <div> MILAN </div>
+                           <div> VENICE </div>
                      </Card.Title>
                <div className='card-text'>
                      <div className='marker'> <MdIcons.MdOutlineAirplanemodeActive size={18}/> </div>
                      <div className='circle'> <BsIcons.BsCircle size={50}/></div>
                      <div className='daysText'> 10 DAYS TRIP </div>
                </div>
-               <Button size='sm' className="btn" variant="light" 
+               <Button size='sm' className="btn-slider" variant="light" 
                onClick={goToItinerary1Page}
                > DISCOVER MORE </Button>
             </Card>
@@ -104,7 +104,7 @@ const ItinerariesSlider = () => {
                      <div className='circle'> <BsIcons.BsCircle size={50}/></div>
                      <div className='daysText'> 10 DAYS TRIP </div>
                </div>
-               <Button size='sm' className="btn" variant="light" 
+               <Button size='sm' className="btn-slider" variant="light" 
                onClick={goToItinerary2Page}
                > DISCOVER MORE </Button>
             </Card>  
@@ -125,7 +125,7 @@ const ItinerariesSlider = () => {
                      <div className='circle'> <BsIcons.BsCircle size={50}/></div>
                      <div className='daysText'> 10 DAYS TRIP </div>
                </div>
-               <Button size='sm' className="btn" variant="light" 
+               <Button size='sm' className="btn-slider" variant="light" 
                onClick={goToItinerary3Page}
                > DISCOVER MORE </Button>
             </Card>  
@@ -145,7 +145,7 @@ const ItinerariesSlider = () => {
                      <div className='circle'> <BsIcons.BsCircle size={50}/></div>
                      <div className='daysText'> 7 DAYS TRIP </div>
                </div>
-               <Button size='sm' className="btn" variant="light" 
+               <Button size='sm' className="btn-slider" variant="light" 
                onClick={goToItinerary4Page}
                > DISCOVER MORE </Button>
             </Card>  
@@ -164,7 +164,7 @@ const ItinerariesSlider = () => {
                      <div className='circle'> <BsIcons.BsCircle size={50}/></div>
                      <div className='daysText'> 7 DAYS TRIP </div>
                </div>
-               <Button size='sm' className="btn" variant="light" 
+               <Button size='sm' className="btn-slider" variant="light" 
                onClick={goToItinerary5Page}
                > DISCOVER MORE </Button>
             </Card>  
@@ -184,7 +184,7 @@ const ItinerariesSlider = () => {
                      <div className='circle'> <BsIcons.BsCircle size={50}/></div>
                      <div className='daysText'> 7 DAYS TRIP </div>
                </div>
-               <Button size='sm' className="btn" variant="light" 
+               <Button size='sm' className="btn-slider" variant="light" 
                onClick={goToItinerary6Page}
                > DISCOVER MORE </Button>
             </Card>  
@@ -204,7 +204,7 @@ const ItinerariesSlider = () => {
                      <div className='circle'> <BsIcons.BsCircle size={50}/></div>
                      <div className='daysText'> 7 DAYS TRIP </div>
                </div>
-               <Button size='sm' className="btn" variant="light" 
+               <Button size='sm' className="btn-slider" variant="light" 
                onClick={goToItinerary7Page}
                > DISCOVER MORE </Button>
             </Card>  
@@ -223,7 +223,7 @@ const ItinerariesSlider = () => {
                      <div className='circle'> <BsIcons.BsCircle size={50}/></div>
                      <div className='daysText'> 7 DAYS TRIP </div>
                </div>
-               <Button size='sm' className="btn" variant="light" 
+               <Button size='sm' className="btn-slider" variant="light" 
                onClick={goToItinerary8Page}
                > DISCOVER MORE </Button>
             </Card>  

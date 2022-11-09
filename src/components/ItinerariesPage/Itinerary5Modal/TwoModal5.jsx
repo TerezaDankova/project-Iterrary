@@ -14,7 +14,7 @@ const TwoModal5 = (props) => {
         <Modal.Body>
            <Container className='ml-3 pr-5'>
 
-           <div className='mt-3' style={{fontSize: '20px', fontWeight: 'bold', letterSpacing: '5px'}}>CALA LUNA</div>
+           <div className='' style={{fontSize: '20px', fontWeight: 'bold', letterSpacing: '5px'}}>CALA LUNA</div>
            <hr  style={{
                color: '#000000',
                height: .5,

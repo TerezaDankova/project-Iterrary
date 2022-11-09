@@ -13,40 +13,31 @@ const OneModal7 = (props) => {
         </Modal.Header>
         <Modal.Body>
            <Container className='ml-3 pr-5'>
-           Ideally,  plan to arrive in Rome early in the morning, or even the night before, to make the most of this day. If you arrive in the morning on a red eye flight, this first day can be challenging. Drop your luggage off at your hotel and spend the afternoon sightseeing in Rome. 
-           I do not recommend making big plans today (no Vatican or Colosseum visits) because you might be exhausted.
+           An ancient port city, Catania is Sicily’s second-largest city and the arrival point for many visitors. Catania is different to Palermo, but not in a bad way. While Palermo may have more markets, Catania is better for shopping and has an abundance of trattoria for food. Catania’s architecture is also more Boroque buildings and it’s worth spending a few nights in the historic city, a compelling mix of gritty and charming.
           
-           <div className='mt-3' style={{fontSize: '20px', fontWeight: 'bold', letterSpacing: '5px'}}>BORGHESE GALLERY</div>
+           <div className='mt-3' style={{fontSize: '20px', fontWeight: 'bold', letterSpacing: '5px'}}>CATANIA</div>
            <hr  style={{
                color: '#000000',
                height: .5,
                borderColor : '#000000',
                marginTop: '-2px'
             }}/>
-           The Borghese contains one of the best collections of art in the world. Art by Bernini, Raphael, Caravaggio, and Titian are all on display. This is a must-see for art aficionados. If you arrive into Rome in the morning, you have enough time to visit the Borghese midday, before the afternoon stroll through the city center.
-           After your visit to the Borghese, stroll through the gardens that surround the museum. They are beautiful!
-           <div className=''> 
-              <div><span className='mr-1' style={{fontWeight: 'bold'}}>Hours:</span> from 9 am till 7 pm/ Closed Mondays</div>
-              <div><span className='mr-1' style={{fontWeight: 'bold'}}>Cost:</span> €13, +€2 reservation fee, prices can increase during special exhibits</div>
-              <div><span className='mr-1' style={{fontWeight: 'bold'}}>Website:</span>  www.galleriaborghese.it </div>
-              <div><span className='mr-1' style={{fontWeight: 'bold'}}>Getting Here:</span> The closest metro station is Barberini on the A line (1.4 km, 17 minutes walking time). You can also get here by bus, taxi, and Uber. </div>
-           </div>
-           <Image className='mt-3' src={'https://images.pexels.com/photos/159862/art-school-of-athens-raphael-italian-painter-fresco-159862.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'} fluid/>
-
-           <div className='mt-5' style={{fontSize: '20px', fontWeight: 'bold', letterSpacing: '5px'}}>EXPLORE THE HEART OF ROME</div>
-           <hr  style={{
-               color: '#000000',
-               height: .5,
-               borderColor : '#000000',
-               marginTop: '-2px'
-            }}/>
-           <div className='mt-2 pr-3'>
-           Spend the afternoon walking through the heart of Rome. This short, easy walk is a great introduction to Rome. On this walk, you will see some of Rome's most famous sites, such as the Spanish Steps, the Trevi Fountain, the Pantheon, and Piazza Navona.
-           This walk is 2 miles long and takes about two hours. You will start at the Spanish Steps and end at Campo de Fiori. Below is a map of the walking route.
-           If you prefer to walk the streets of Rome with a guide, this afternoon walking tour includes the Spanish Steps, the Trevi Fountain, the Pantheon, and Piazza Navona. And this is another highly rated walking tour of the historic center of Rome that includes gelato or coffee.
-           The walking route starts at the Spanish Steps. If you visited the Borghese Gallery, it is a short walk to get here. From the Spanish Steps, you will walk to the Trevi Fountain, the Pantheon, stroll through lovely Piazza Navona, and end in Campo de Fiori. 
-           For dinner, you can eat at one of the restaurants in Piazza Navona or Campo de Fiori. Or, if you are still doing great on time and energy, consider crossing the Tiber River to Trastevere, a neighborhood that is filled with great restaurants. We had a wonderful dinner at Carlo Menta.
-           </div>
+            We recommend allowing two days for Catania: one day to explore the city and a second to make some of the day trips from the city.
+            <div>
+               <br/>
+            <span style={{fontWeight: 'bold', fontSize: '16px'}}>
+            Things to do in Catania:
+            </span>
+            <br/>
+            One day is enough time to see most of the main sights in Catania.
+            Start your morning at the Catania Fish Market (Piscaria Mercato del Pesce). Located close to the Port and a short walk from Ursino Castle (Castello Ursino). The fish market is one of the best markets in Sicily and is packed with every kind of seafood imaginable.
+            Make sure not to miss the Catania Archaeological Park in the centre of the old town. Catania was once a Greek settlement and the ruins of the Greek Theatre remain hidden away under the city. The park contains a Roman Amphiteare and baths along with the Greek-Roman Theatre on Via Vittorio Emanuele II.
+            One of the best parts of the park is that visitors are free to walk around all of the ruins so it’s a very intimate experience compared to other archaeological sites in Italy.
+            There are many great sites to explore in Catania. We recommend a visit to the stunning Bellini Gardens and the impressive Catania Cathedral. The medieval Ursino Castle is definitely worth an hour to explore and has an impressive museum inside.
+            If you fancy some window shopping take a stroll up Via Etnae, a partially pedestrianised street that leads off Piazza Duomo. There is also a great view of Mount Etna in the distance looking north from Via Etnae.
+            </div>
+           
+       
             <Row className='my-3'> 
               <Col sm={6}>
                <Image className='mt-3' src={'https://images.pexels.com/photos/2225442/pexels-photo-2225442.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'} fluid/>

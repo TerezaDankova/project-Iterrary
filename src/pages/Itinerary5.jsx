@@ -68,7 +68,7 @@ const Itinerary5 = (props) => {
       </div>
       </Col>
       <Col sm={4}>
-      <div className='mt-5'>
+      <div className='mt-5 box-days p-4'>
         <div><span className='mr-2 days' onClick={handleOne5Show}>Day 1:</span><span>Golfo di Orosei</span></div>
         <div><span className='mr-2 days' onClick={handleTwo5Show}>Day 2:</span><span>Golfo di Orosei</span></div>
         <div><span className='mr-2 days' onClick={handleThree5Show}>Day 3:</span><span>Palau</span></div>

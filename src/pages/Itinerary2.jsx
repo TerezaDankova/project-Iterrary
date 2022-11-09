@@ -45,7 +45,7 @@ const Itinerary2 = (props) => {
     <Container>
       {props.loadState && <Loader/>}
       <h1 className="my-3 textMain"> TRIP ITINERARY LIST </h1>
-      <h6 className="textCityOrange">ROME - FLORENCE - AMALFI COAST</h6>
+      <h6 className="textCity">ROME - FLORENCE - AMALFI COAST</h6>
 
 
       <OneModal2 one2Show={one2Show} setOne2Show={setOne2Show}/>
@@ -61,16 +61,16 @@ const Itinerary2 = (props) => {
 
 
     <Row className='mt-3 mb-3 flex-grow-1 d-flex justify-content-center'>
-      <span className="mr-3 btnOrange" onClick={handleOne2Show} >Day 1</span>
-      <span className="mr-3 btnOrange" onClick={handleTwo2Show} >Day 2</span>
-      <span className="mr-3 btnOrange" onClick={handleThree2Show} >Day 3</span>
-      <span className="mr-3 btnOrange" onClick={handleFour2Show} >Day 4</span>
-      <span className="mr-3 btnOrange" onClick={handleFive2Show} >Day 5</span>
-      <span className="mr-3 btnOrange" onClick={handleSix2Show} >Day 6</span>
-      <span className="mr-3 btnOrange" onClick={handleSeven2Show} >Day 7</span>
-      <span className="mr-3 btnOrange" onClick={handleEight2Show} >Day 8</span>
-      <span className="mr-3 btnOrange" onClick={handleNine2Show} >Day 9</span>
-      <span className="mr-3 btnOrange" onClick={handleTen2Show} >Day 10</span>
+      <span className="mr-3 btnGreen" onClick={handleOne2Show} >Day 1</span>
+      <span className="mr-3 btnGreen" onClick={handleTwo2Show} >Day 2</span>
+      <span className="mr-3 btnGreen" onClick={handleThree2Show} >Day 3</span>
+      <span className="mr-3 btnGreen" onClick={handleFour2Show} >Day 4</span>
+      <span className="mr-3 btnGreen" onClick={handleFive2Show} >Day 5</span>
+      <span className="mr-3 btnGreen" onClick={handleSix2Show} >Day 6</span>
+      <span className="mr-3 btnGreen" onClick={handleSeven2Show} >Day 7</span>
+      <span className="mr-3 btnGreen" onClick={handleEight2Show} >Day 8</span>
+      <span className="mr-3 btnGreen" onClick={handleNine2Show} >Day 9</span>
+      <span className="mr-3 btnGreen" onClick={handleTen2Show} >Day 10</span>
     </Row>
     <Row>
       <Col sm={8}>
@@ -79,7 +79,7 @@ const Itinerary2 = (props) => {
       </div>
       </Col>
       <Col sm={4}>
-      <div className='mt-5'>
+      <div className='mt-5 box-days p-4'>
         <div><span className='mr-2 days' onClick={handleOne2Show}>Day 1:</span><span>Arrive in Rome</span></div>
         <div><span className='mr-2 days' onClick={handleTwo2Show}>Day 2:</span><span>Rome</span></div>
         <div><span className='mr-2 days' onClick={handleThree2Show}>Day 3:</span><span>Rome</span></div>

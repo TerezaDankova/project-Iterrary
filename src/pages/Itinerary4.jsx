@@ -38,7 +38,7 @@ const Itinerary4 = (props) => {
     <Container>
       {props.loadState && <Loader/>}
       <h1 className="my-3 textMain"> TRIP ITINERARY LIST </h1>
-      <h6 className="textCityOrange">CINQUE TERRE - TUSCANY - LAKE COMO - TRENTINO</h6>
+      <h6 className="textCity">CINQUE TERRE - TUSCANY - LAKE COMO - TRENTINO</h6>
 
 
       <OneModal4 one4Show={one4Show} setOne4Show={setOne4Show}/>
@@ -52,13 +52,13 @@ const Itinerary4 = (props) => {
 
 
     <Row className='mt-3 mb-3 flex-grow-1 d-flex justify-content-center'>
-      <span className="mr-3 btnOrange" onClick={handleOne4Show} >Day 1</span>
-      <span className="mr-3 btnOrange" onClick={handleTwo4Show} >Day 2</span>
-      <span className="mr-3 btnOrange" onClick={handleThree4Show} >Day 3</span>
-      <span className="mr-3 btnOrange" onClick={handleFour4Show} >Day 4</span>
-      <span className="mr-3 btnOrange" onClick={handleFive4Show} >Day 5</span>
-      <span className="mr-3 btnOrange" onClick={handleSix4Show} >Day 6</span>
-      <span className="mr-3 btnOrange" onClick={handleSeven4Show} >Day 7</span>
+      <span className="mr-3 btnGreen" onClick={handleOne4Show} >Day 1</span>
+      <span className="mr-3 btnGreen" onClick={handleTwo4Show} >Day 2</span>
+      <span className="mr-3 btnGreen" onClick={handleThree4Show} >Day 3</span>
+      <span className="mr-3 btnGreen" onClick={handleFour4Show} >Day 4</span>
+      <span className="mr-3 btnGreen" onClick={handleFive4Show} >Day 5</span>
+      <span className="mr-3 btnGreen" onClick={handleSix4Show} >Day 6</span>
+      <span className="mr-3 btnGreen" onClick={handleSeven4Show} >Day 7</span>
     </Row>
     <Row>
       <Col sm={8}>
@@ -67,7 +67,7 @@ const Itinerary4 = (props) => {
       </div>
       </Col>
       <Col sm={4}>
-      <div className='mt-5'>
+      <div className='mt-5 box-days p-4'>
         <div><span className='mr-2 days' onClick={handleOne4Show}>Day 1:</span><span>Cinque Terre</span></div>
         <div><span className='mr-2 days' onClick={handleTwo4Show}>Day 2:</span><span>Cinque Terre</span></div>
         <div><span className='mr-2 days' onClick={handleThree4Show}>Day 3:</span><span>Tuscany</span></div>

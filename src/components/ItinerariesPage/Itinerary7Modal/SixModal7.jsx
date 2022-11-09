@@ -14,26 +14,42 @@ const SixModal7 = (props) => {
         <Modal.Body>
            <Container className='ml-3 pr-5'>
   
-           In the morning, travel by train from Florence to the Cinque Terre. From Florence, it takes between an hour and a half and three hours to get to the Cinque Terre. The train arrives in La Spezia or Monterosso, where you will then get on the local train that links all five towns of the Cinque Terre.
-           The Cinque Terre is a UNESCO World Heritage Site and one of Italy's most photogenic destinations. Five colorful towns are perched on the dramatic coastline of Italy. Each town offers something a little bit different than the others, and part of the fun of visiting the Cinque Terre is picking your favorite one.
-           Once in the Cinque Terre, check into your hotel. Spend the rest of the day exploring the town where you are staying. For a great sunset spot, visit Riomaggiore and walk down to the waterfront.
-     
-           <div className='mt-5' style={{fontSize: '20px', fontWeight: 'bold', letterSpacing: '5px'}}>PISA</div>
+           As you leave Ragusa Ibla, the panoramic scenery will give you some more epic views over the town and surrounding hills.
+           You might be feeling a little down at this point, with the end of your vacation in sight, but you’re sure to have lots of fun on this day of exploring.
+
+           <div className='mt-5' style={{fontSize: '20px', fontWeight: 'bold', letterSpacing: '5px'}}>RAGUSA IBLA</div>
            <hr  style={{
                color: '#000000',
                height: .5,
                borderColor : '#000000',
                marginTop: '-2px'
             }}/>
-           If you want to see the Leaning Tower of Pisa, it is easy to add on to today's itinerary. Take the train from Florence to Pisa, store your luggage in the luggage storage center in the Pisa train station, and spend a few hours visiting Pisa. 
-           The city is also home to the University of Pisa, which has a history going back to the 12th century, the Scuola Normale Superiore di Pisa, founded by Napoleon in 1810, and its offshoot, the Sant'Anna School of Advanced Studies.
-           The tower began to lean during construction in the 12th century, due to soft ground which could not properly support the structure's weight. It worsened through the completion of construction in the 14th century. By 1990, the tilt had reached 5.5 degrees.
-            The structure was stabilized by remedial work between 1993 and 2001, which reduced the tilt to 3.97 degrees.
-           Retrieve your luggage and then take a second train to the Cinque Terre.
+           Conscious there’s been a lot of adventure and history in this Sicily itinerary, but not much relaxing! If you want a bit of beach time, head to Ragusa Marina for a little sea and sand.
+           It’s a classic white sandy beach, with a few palm trees lining the coast to break the horizon. It’s not a particularly exciting beach, but the water is clear, warm and calm. Perfect to wake you up for a full day ahead.
+ 
+           <div className='mt-5' style={{fontSize: '20px', fontWeight: 'bold', letterSpacing: '5px'}}>CALTAGIRONE</div>
+           <hr  style={{
+               color: '#000000',
+               height: .5,
+               borderColor : '#000000',
+               marginTop: '-2px'
+            }}/>
+            Stop in Caltagirone on your drive back to Catania to break up the drive. It’s an hour and a half drive from Ragusa to Catania, so if you loved your first stop, you can keep going. But Caltagirone makes for a lovely break in the drive.
+            Caltagirone’s main claim to fame is the Staircase of Santa María del Monte.
+            The long, world-renowned staircase is tiled with the ceramics that Caltagirone is also known for. And it leads to an incredible view if you can make it to the top.
+            If you want a few pretty things to remember your trip by, the ceramics here make for wonderful souvenirs.
+           
+            <div className='mt-5' style={{fontSize: '20px', fontWeight: 'bold', letterSpacing: '5px'}}>CATANIA</div>
+           <hr  style={{
+               color: '#000000',
+               height: .5,
+               borderColor : '#000000',
+               marginTop: '-2px'
+            }}/>
+            By the end of the day, it’s best to get back to Catania, so that you’re close to the airport and relatively ready to go. There’s also lots to still see and do in Catania, so you won’t be bored.
+            There are great restaurants for dinner as well, so get in a last bite of Italian food before you go home. After all, you might not make as many trips to Sicily as you’d like.
+           
             <Row>
-             <Col sm={12}>
-               <Image className='mt-3 mb-3' src={'https://images.pexels.com/photos/4388287/pexels-photo-4388287.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'} fluid/>
-             </Col>
              <Col sm={6}>
                <Image className='mt-3 mb-3' src={'https://images.pexels.com/photos/4846210/pexels-photo-4846210.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'} fluid/>
              </Col>

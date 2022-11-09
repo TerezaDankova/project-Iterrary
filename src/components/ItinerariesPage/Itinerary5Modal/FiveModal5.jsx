@@ -14,18 +14,15 @@ const FiveModal5 = (props) => {
         <Modal.Body>
            <Container className='ml-3 pr-5'>
          
-           <div className='mt-3' style={{fontSize: '20px', fontWeight: 'bold', letterSpacing: '5px'}}>TUSCANY DAY TRIP</div>
+           <div className='' style={{fontSize: '20px', fontWeight: 'bold', letterSpacing: '5px'}}>COSTA SMERALDA</div>
            <hr  style={{
                color: '#000000',
                height: .5,
                borderColor : '#000000',
                marginTop: '-2px'
             }}/>
-           Today, day trip into Tuscany. There are several ways to do this. You can book a tour, hire a driver, rent a car and set out on your own, or visit one or two towns by bus.
-           We toured Tuscany by bus and by rental car. The bus was a nightmare, at least when we did it in 2014. At several locations, the buses failed to show up, leaving us (and many other travelers) stranded at the bus stations for hours. Renting a car for the day is more expensive, but we had a lot more freedom and we could visit towns that buses do not travel to.
-           Traveling by a small group tour is a nice way to go. For a little more money, hiring a driver is a great way to tour Tuscany.
-          
-         
+          The Costa Smeralda is a region blessed by countless beautiful beaches, so if you’re a beach lover and have a hire car, you’ll be truly spoilt for choice. Close to Palau, you’ve got La Sciumara Beach, located in between Palau and Porto Rafael. A sweeping bay of golden sand with shallow turquoise water, this is a great spot for families and anyone who loves snorkelling, and there’s parking, a bar and sailing boat hire.
+          For anyone looking for something more active, head to Porto Pollo Beach. 7km west of Palau, it’s a popular spot for windsurfing, kitesurfing, diving and sailing, as the conditions here are excellent.
            <Row>
              <Col sm={12}>
                <Image className='mt-3' src={'https://images.pexels.com/photos/2422461/pexels-photo-2422461.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'} fluid/>

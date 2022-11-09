@@ -22,10 +22,10 @@ const TripAdvisorList =  (props) => {
             <div className="pl-3" style={{fontSize: '18px', textTransform: 'uppercase', color: 'orange'}}> 
             <span style={{color: 'black'}}>SELECTED RESTAURANT:</span>
             <br/>
-             {props.selectedPlace?.name}
+             <div>{props.selectedPlace?.name}</div>
+             
             </div>
          
-
             {props.places.map((place, i) => (
             <Col md={12} key={i}>
                  <TripAdvisorPlaceDetails place={place} />

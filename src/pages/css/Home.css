@@ -10,69 +10,74 @@
    background-size: cover;
    margin-top: -80px; 
  }
- .box{
-   background-color: rgba(83, 100, 53, 0.663);
-   padding: 70px;
+.box{
+   background-color: rgba(83, 100, 53, 0.459);
    width: 1000px;
-   height: 400px;
    margin: auto;
    align-items: center;
    display: flex;
    border-radius: 10px;
  }
- .main-text {
+.main-text {
    text-align: center;
    color: rgb(255, 255, 254);
    font-weight: bold; 
-   font-size: 50px;
+   font-size: 70px;
    letter-spacing: 1px;
+   line-height: 59px;
  }
- .main-text-one {
+.main-text-one {
   text-align: center;
   color: rgb(255, 255, 254);
   font-weight: bold; 
   font-size: 20px;
+  letter-spacing: 2px;
 }
- .main-text-two {
+.main-text-two {
   text-align: center;
   color:  white;
-  font-size: 16px;
+  font-size: 18px;
 }
- .button-home {
+.button-home {
   width: 300px;
   margin: auto;
+  margin-top: 30px;
   padding: 20px
- }
- .food-text {
-   margin-top: 300px;
+}
+.food-text {
    font-size: 45px;
-   text-align: left;
- }
- .food-text-small {
+   text-align: right;
+}
+.food-text-small {
    font-size: 18px;
-   
- }
- .button-restaurants {
+   text-align: right;
+   letter-spacing: 4px;  
+}
+.button-restaurants {
   width: 300px;
-  margin: auto;
+  margin-left: auto;
   padding: 20px;
   display: block;
   font-weight: bold;
+}
+.button-restaurants:hover {
   color: white;
- }
- .text-pasta {
-   font-size: 18px;
+}
+.text-pasta {
+   font-size: 20px;
    color: white;
- }
+   text-align: center;
+}
 .box-pasta {
-  background-color: rgba(83, 100, 53, 0.663);
+  background-color: rgba(83, 100, 53, 0.531);
   border-radius: 10px;
   width: 800px;
   display: flex;
   align-items: center;
+  letter-spacing: 1px;
 }
 .box-foody {
-  background-color: rgba(83, 100, 53, 0.663);
+  background-color: rgba(83, 100, 53, 0.531);
   border-radius: 10px;
   width: 900px;
   margin: auto;

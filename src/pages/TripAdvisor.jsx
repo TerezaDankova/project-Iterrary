@@ -33,7 +33,7 @@ const TripAdvisor = (props) => {
          <TripAdvisorHeader />
          <div className="mt-5 mb-5">
          <h4 style={{display: 'flex', justifyContent: 'center', alignItems: 'center', letterSpacing: '4px'}}>
-           THESE ARE THE RESTAURANTS AROUND YOU!
+           THESE ARE THE BEST RESTAURANTS!
          </h4>
          </div>
          <Row>
