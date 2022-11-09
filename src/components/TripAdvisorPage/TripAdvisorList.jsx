@@ -1,7 +1,6 @@
 import { useEffect } from "react"
 import { Col } from "react-bootstrap";
 import TripAdvisorPlaceDetails from "./TripAdvisorPlaceDetails";
-import { Image } from "react-bootstrap";
 
 
 
@@ -16,7 +15,7 @@ const TripAdvisorList =  (props) => {
    return (
   
       <div>
-      
+   
             <div style={{ maxHeight: '500px', overflowY: 'scroll' }}>
             
             <div className="pl-3" style={{fontSize: '18px', textTransform: 'uppercase', color: 'orange'}}> 

@@ -1,4 +1,3 @@
-
 import React from "react"
 import { Card, Col, Row, Image} from "react-bootstrap"
 import { AiFillStar } from 'react-icons/ai'
